@@ -1,0 +1,58 @@
+<html>
+<body>
+<h3>[5] DATOS DE CALIBRACIÓN </h3>
+
+Los datos de la calibración se muestra en la pantalla de la lista de datos de calibración. Si la calibración no tiene datos, la ventana está vacía para los botones superiores.Cada línea de datos de calibración  contiene la siguiente información de datos: 
+<ul style="margin-top=0">
+<li>Índice: Índice incremental que identifica los datos </li>
+<li>Grupo: número del grupo a los que pertenece los datos  </li>
+<li>El rumbo, inclinación, y roll, calculado a partir de los valores de raw, sin ninguna
+corrección de calibración. </li>
+<li>Error: la diferencia entre la calibración corregida de dirección y el
+grupo de dirección media, expresada en grados. </li>
+</ul><br><p>
+
+Los datos de calibración se muestran con texto de color rojo y azul, alternando entre números de grupo de pares e impares. Los datos sin ningún grupo se muestran de color gris. <br><p>
+
+<h4>Acciones </h4>
+<ul style="margin-top=0">
+<li>Datos: toque en un cuadro de diálogo de edición de datos de calibración. </li>
+</ul><br><p>
+
+<h4>Botones </h4>
+<ul style="margin-top=0">
+<li><u>Alternar</u> el modo de calibración DistoX on y off </li>
+<li><u>Bluetooth</u> reinicio de bluetoth </li>
+<li><u>Descargue</u> los datos de calibración del DistoX </li>
+<li><u>Política de rupos</u> se divide los datos de la calibración en <a href="page_groups.htm">grupos</a> automáticamente </li>
+<li><a href="page_calib_coeffs.htm"></a> Cálculo de los coeficientes de calibración </li>
+<li><a href="page_calib_distrib.htm">Distribución angular</a> de los datos de calibración </li>
+<li><u>Leer</u> y mostrar los coeficientes almacenados en el DistoX </li>
+<li><u>Escribir</u> escribe los coeficientes de calibración del DistoX. Habilitado sólo después de que los coeficientes de calibración se han calculado. Los coeficientes pueden ser escritos directamente desde el cuadro de diálogo que muestra el resultado del cálculo. </li>
+</ul><br><p>
+
+Al inicio sólo la lectura de datos (leer) está activa para descargar los datos de la calibración.  Los datos descargados se agregan a la calibración actual. Por lo tanto usted puede tomar las mediciones de calibración, descargar los datos, comprobar si está satisfecho con ellos, si no, obtener más datos y descargarlos. Así sucesivamente hasta que estés satisfecho con sus datos de calibración. Los datos descargados se pueden "desactivar" (estableciendo el número de grupo en "0" (cero);
+los datos desactivados no se utilizan en el cálculo de los coeficientes de calibración) o eliminar (generalmente no aparecen en la lista de datos).
+Los datos eliminados no son tenidos en cuenta en la política de asignación de grupo. <br><p>
+
+<h4>Cálculo de calibración </h4>
+Al pulsar el botón "engranaje" se inicia el cálculo de los coeficientes de calibración. <br>
+Cuando el cálculo finaliza, el coeficiente se muestra en el diálogo. <br>
+Si no hay suficientes datos o grupos de datos, el cálculo no se realiza y se muestra un mensaje de advertencia. <br>
+Falla la calibración si el límite de la iteración se alcanza antes de que termine el cálculo. En este caso aparece un mensaje. <br><p>
+
+<h4>Advertencias </h4>
+<ul style=margin-top=0">
+<li><b>Saturación de datos</b>: Datos con valor de campo magnético anormal. Una posible causa de esto es la presencia de campos magnéticos espurios. Los datos saturados tienen un fondo rojo </li>
+<li><b>Cero datos</b>: los datos de calibración han sido mal recibidos. Los datos tiene valores cero y de forma predeterminada, no se le asigna un número, aunque se usa en la política de los grupos. Cero datos tienen un fondo de color rosa </li>
+</ul><br><p>
+<h4>Menús </h4>
+<ul style="margin-top=0">
+<li><u>Pantalla</u>: si desea mostrar todos los datos, incluidos los datos eliminados </li>
+<li><u>Validar</u>: la <a href="page_validation.htm">validación</a> de esta calibración con otra </li>
+<li><u>Ajustes</u>: la misma que la ventana de calibración </li>
+<li><u>Ayuda </u></li>
+</ul><br><p>
+<a href="manual04.htm">&lt; Pantalla de calibración</a> |
+<a href="manual06.htm">Datos de topografía &gt;</a>
+</body></html>

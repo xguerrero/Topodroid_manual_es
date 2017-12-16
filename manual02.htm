@@ -1,0 +1,68 @@
+<html><body>
+<h3>[2] PANTALLA PRINCIPAL</h3><p>
+
+La pantalla principal tiene tres (o cinco) botones en la parte superior, y la lista de las topografias debajo. Esta lista está vacía hasta que crea una topografia.
+La primera vez que inicia la aplicación, se muestra un mensaje de bienvenida: ¡léalo! Es importante: es una exención de responsabilidad. Puede volver a verlo en cualquier momento en el menú <u> Acerca de</u> menu.<br><p>
+
+Para salir de la pantalla principal de TopoDroid, toque dos veces el botón "ATRÁS" de su dispositivo.<br><p>
+
+
+<h4>MENÚ</h4>
+<ulist>
+<li><u>Paleta</u> Permite elegir los iconos de dibujo que están habilitados. TopoDroid tiene muchos iconos de dibujo, algunos de ellos es posible que no lo necesites tener habilitados. Únicamente los iconos más usados, facilitando el cambio de uno a otro. Puedes seleccionarlos en el cuadro de diálogo del selector de herramientas.</li>
+<li><u>Comparte topo</u> [E] Abre el cuadro de diálogo para conectarse con la aplicación TopoDroid en otro Android para realizar un levantamiento topográfico [nivel experimental solamente].</li>
+<li><u>Ajustes</u>. Puede elegir todas las configuraciones del programa: las globales y las de topografía, dibujo, calibración y dispositivos. Hay muchas configuraciones ajustables. Los valores predeterminados deben ser lo suficientemente razonables. Quizás desee cambiar las "unidades de visualización" para las longitudes; puede elegir entre metros (predeterminado) y pies. Tenga en cuenta que esto es solo una conversión de unidades en la pantalla; internamente, en la base de datos, TopoDroid almacena longitudes en metros. Es posible cambiar otras configuraciones como los botones, los tamaños de los textos y las unidades de dibujo. </li>
+<li><u>Registros</u> [E] Permite decidir qué registrar y si quiere guardarlo en el registro del sistema o en un archivo (en el directorio de TopoDroid). Por defecto, los registros se envían al registro del sistema y solo se registran los mensajes de error. El registro es principalmente para la depuración de errores [nivel experimental solamente] </li>
+<li><u>Acerca de</u>: Muestra el mensaje de bienvenida del programa y la declinación de responsabilidad</li>
+<li><u>Ayuda</u> Muestra una breve descripción de los botones y menús. En la esquina superior derecha hay un botón que abre este manual del usuario. Tambien tienen menús otras pantallas de TopoDroid  <u> Ayuda</u></li>
+</ulist><br><p>
+
+<h4>BOTONES</h4>
+<ulist>
+<li><u>Actividad del dispositivo</u> (Icono DistoX): cambia a la pantalla para las Ajustes del Dispositivo</li>
+<li><u>Añadir</u>  (Icono + signo más): utilizado para crear una nueva topografía </li>
+<li><u>Importar</u> (Icono flecha vertical): se usa para importar archivos ZIP creados con TopoDroid o archivos de topografías (Therion, Compass, VisualTopo o PocketTopo).</li>
+<li><u>Simbología</u> Se puede seleccionar los archivosde la simbología en el selector de símbolos.</li>
+<li>botones opcionales [E] son ​​para <i> ThManager </i> (administrador de Therion) y el <i> visualizador de SQLite </i>; ambos requieren aplicaciones externas</li>
+</ulist><br><p>
+
+<h4>Ajustes</h4>
+<ulist>
+<li><i>Directorio principal</i>: Establece el directorio de trabajo actual. Por defecto "TopoDroid", pero se puede cambiar a otro directorio en la memoria externa principal. Si el directorio no existe, se crea. La base de datos y los archivos de datos se almacenan en el directorio de trabajo. Los archivos de herramientas de dibujo y el archivo de firmware se almacenan en el directorio "TopoDroid" predeterminado:</li>
+<li><i>Tamaño de texto</i>: Aumenta o disminuye el tamaño de los caracteres en las listas</li>
+<li><i>Tamaño de Botones</i>: ya sea "pequeño" o "grande". Los botones pequeños son adecuados para una pantalla de 5". Es posible que desee cambiar a botones grandes si usa una tableta de 7". </li>
+<li><i>Nivel de usuario</i>: TopoDroid tiene cinco niveles de usuario, cada nivel activa un numero de funciones que va incrementandose según el modo. El nivel predeterminado ("normal") proporciona las funciones más comunes. De esta forma, no se muestran botones innecesarios. </li>
+<li><i>Teclado</i>: Activa o desactiva los teclados personalizados. </li>
+<li><i>Traducción del manual</i>: Activa o desactiva la traduccíón del manual </li>
+<li><i>Cosurvey</i>: Activa o desactiva la opción de compartir topografias. </li>
+<li><i>Idioma</i>: Los idiomas disponibles son: inglés, francés, alemán, italiano, ruso, español y búlgaro. Si no se selecciona ningún idioma, se usa el idioma del sistema.</li>
+</ulist><br><p>
+
+<h4>Importar archivo</h4>
+El botón <u>Importar</u> abre un cuadro de diálogo que enumera los archivos que se pueden importar en la aplicación.
+TopoDroid puede importar los archivos de la topografía en los siguientes formatos:
+<ulist>
+<li>Therion: ". archivos de datos ".th", con formato de datos simple ("pendiente, rumbo y distancia" y opcionalmente LRUD)Los detalles de Therion no se importa. </li>
+<li>Compass ". archivos  "dat"  (no probados completamente)</li>
+<li>VisualTopo archivos ".tro" (no probados por completo) </li>
+<li>PocketTopo archivos ".top". Los datos y los dibujos se importan (no probados por completo) </li>
+<li>Archivos ZIP de TopoDroid. Se trata de archivos zip especiales con información para repoblar la base de datos, los dibujos (archivos ".th2"), el archivo de anotación y las fotografías.</li>
+</ulist><br>
+
+Los archivos Zip se buscan en el directorio "zip" (que es donde TopoDroid los guarda). Los archivos de la topografía se buscan en el directorio "importar". Por lo tanto, debe copiar el archivo de la topografía que desea importar en este directorio. Si el nombre de la topografía del archivo a importar ya existe en la base de datos, el archivo no se importa. <br><p>
+
+<h4>Registro</h4>
+El registro es importante para resolver problemas cuando el programa no se comporta como se esperaba. Por ejemplo, cuando el resultado de un cálculo no concuerda con el obtenido por otros medios, o la entrada del usuario no se analiza correctamente. Hay varios indicadores de registro. Para limitar los registros a aquellos necesarios para encontrar la causa del problema. Por defecto, solo se registra el "error" (es decir, cuando el programa detecta algo que no debería haber sucedido) <br><p>
+
+Los registros [E] son ​​diferentes a los bloqueos de software. Los bloqueos se deben a que el programa se comporta mal en el sistema y el sistema los detecta, lo que finaliza el programa. Debería informar de los bloqueos (y ANR) a través de Google Play para que se adjunte un seguimiento y puedan corregirse más fácilmente. Por favor, colabore para agregar un comentario sobre lo que el programa estaba haciendo cuando se bloqueó. <br><p>
+
+<hr>
+Si <b>bluetooth</b> no está activado, la aplicación pregunta si desea activarlo. Si bluetooth, no se puede comunicar con DistoX, los datos de la topografía solo se pueden ingresar manualmente. En este caso, el botón "Descargar" en la ventana de tomas, está oculto y en la ventana de Croquis se reemplaza por el botón "Agregar". <br><p>
+
+<b>Simbología:</b> Cuando la aplicación se inicia la primera vez, instala los archivos del selector de símbolos en el directorio "símbolo". Hay archivos para puntos (símbolos icónicos, como "entrada" o "estalagmita"), líneas (como "pared" o "pozo") y áreas (zonas que se muestran con un color transparente). Si ha actualizado la aplicación a una nueva versión, le preguntará si desea volver a instalar las herramientas de dibujo. <br>
+Incluso si TopoDroid viene con muchas herramientas de dibujo preinstaladas (45 puntos, 15 líneas y 9 áreas), puede suceder que no contenga las herramientas que necesita (o no le gusta la que se proporciona). Los archivos de herramientas son archivos de texto sin formato y puede escribir sus propios archivos de herramientas. Después de colocarlos en los subdirectorios de símbolos, TopoDroid los verá y usará. La sintaxis de los archivos de herramientas se describe en una página del sitio web speleoapps<br><p>
+
+<a href="manual03.htm"><img src="ic_back.png"></a>
+<a href="manual05.htm"><img src="ic_forw.png"></a>
+
+</body></html>

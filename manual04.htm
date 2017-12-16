@@ -1,0 +1,48 @@
+<html>
+<body>
+<h3>[4] PANTALLA DE CALIBRACIÓN </h3>
+
+Tocar el<u></u> menú de calibración <i></i> en la pantalla del dispositivo muestra las listas de las
+<a href="page_calib_dialog.htm">calibraciones</a> del DistoX activo. Puede abrir una calibración o
+crear una nueva. En ambos casos se accede desde la <i>ventana de calibración</i>. <br><p>
+
+La ventana de calibración tiene campos de texto para:
+<ul style="margin-top=0">
+<li>El nombre. Cada calibración debe tener un nombre único. </li>
+<li>La fecha. </li>
+<li>Una descripción. </li>
+</ul>
+Los botones de radio para el algoritmo de calibración. De forma predeterminada, esta opción está configurada en "Auto" (es decir, deje a TopoDroid decidir qué algoritmo utilizar). <br><p>
+
+<h4>Botones </h4>
+<ul style="margin-top=0">
+<li><u>Guardar</u> la información de calibración a la base de datos. </li>
+<li><u>Abrir</u> la ventana Datos de calibración. </li>
+<li><u>Mostrar</u> los coeficientes de calibración. Esto muestra los coeficientes calculados previamente y se almacenan en la base de datos. </li>
+</ul><br><p>
+
+<h4>Menús </h4>
+<ul style="margin-top=0">
+<li> <a href="page_calib_import.htm">Exportación de calibración</a></li>
+<li><u>Eliminar</u> la calibración y sus datos de la base de datos (Acción no recuperable). </li>
+<li><u>Ajustes </u></li>
+<li><u>Ayuda </u></li>
+</ul><br><p>
+
+<h4>ajustes de calibración </h4>
+<ul style="margin-top=0">
+<li><i>Política de grupo</i>: cómo dividir los datos de calibración en <a href="page_groups.htm">grupos</a> [predeterminado "Grupo 4"] </li>
+<li><i>Precisión grupo</i>: la máxima distancia angular entre datos consecutivos para que estén en el mismo grupo, cuando la "distancia" se utiliza la política de grupo [predeterminado 40 min 0] </li>
+<li><i>Error</i>: el cálculo de los coeficientes se termina cuando el coeficiente de variación de cada una de las iteraciones durante un paso es menor que este valor predeterminado [10-6<sup></sup> i, min 0]. </li>
+<li><i>Iteraciones</i>: el número máximo de iteraciones del algoritmo de calibración [predeterminado 200, 50 min]. </li>
+<li><i>Datos sin procesar</i>: por defecto TopoDroid muestra el rumbo, inclinación y balanceo. Seleccione esta opción si desea ver también los datos de calibración raw, decimales o hexadecimales. [Default "no"] </li>
+<li><i>Algoritmo</i>: puede ser 0 (auto), 1 (lineal), 2 (no lineal). Si un algoritmo de calibración queda "auto" y esta configuración no es "auto", el algoritmo de la configuración se utiliza para calcular la calibración. Si ambos son "auto", el algoritmo es elegido automáticamente por DistoX de TopoDroid, dependiendo del modelo y el firmware. "Auto" [default] </li>
+</ul><br><p>
+
+<a href="page_calib_howto.htm">Howto de calibración</a><br>
+<p>
+
+<a href="manual03.htm">&lt; la ventana del dispositivo</a> |
+<a href="manual05.htm">Calibración datos &gt;</a>
+
+</body></html>
