@@ -1,0 +1,123 @@
+<html>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
+</HEAD>
+<body>
+<h3>[6] Pantalla de datos de topografía </h3>
+
+La pantalla de topografía,  muestra la lista de tomas de la topografía. <br><p>
+
+TopoDroid distingue cuatro tipos de tomas (se muestran con distintos colores):
+<ol>
+<li>[Naranja] tomas "en blanco", son tomas que no estan asignadas ni definidas</li>
+<li>[Azul] "toma radial": tiene sólo una estación, generalmente la estación "desde" </li>
+<li>[Blanco] "poligonal principal" (es la primera toma de un grupo de mediciones repetidas, predeterminado son 3 ): Esta visual tiene tanto la estación "Desde" y "hasta" </li>
+<li>[Gris] "tomas duplicadas" (las siguientes tomas de un grupo de visuales en la cual la toma en blanco es la referencia): Estas visuales no necesitan tener estaciones  </li>
+</ol><p>
+Colores de fondo:
+<ul>
+<li>Azulado (estación): últimos tomas descargadas </li>
+<li>Rojizo (datos): <a href="page_accuracy.htm">poco fiables</a> , es decir, tomas con intensidades de campo "anormales" (sólo DistoX2) </li>
+<li>Naranja (datos): tramo corto </li>
+</ul><br>
+<img src="tomas_list.png" alt="tomas list"/><p>
+
+<h4>Acciones </h4>
+<ul style="margin-top:0">
+<li>Con una pulsación en los datos de la toma se abre el <a href="page_toma_edit1.htm"> cuadro de pantalla de edición de esta toma</a></li>
+<!--li>tap on a toma clino: toma <a href="page_toma_edit2.htm">secondary actions</a></li-->
+<li>Con una pulsación larga en una estación: selecciona/deselecciona la <a href="page_current.htm">estación "activa" y se cambia a color verde, para identificar esa estación en concreto. En la siguiente descarga la estación verde será la estación de salida</a></li>
+</ul><br><p>
+
+<h4>Iconos </h4>
+<ul style="margin-top:0">
+<li>flecha <a href="page_download.htm">descarga de datos</a>. Si no selecciona nigundisto DistoX, este icono permanece oculto</li>
+<li><a href="page_bluetooth.htm">Bluetooth</a></li>
+<li> <a href="page_displaymode.htm">Modo de visualización de datos</a></li>
+<li><a href="page_plot_list.htm"></a> Cuadro de pantalla con la lista de croquis </li>
+<li>topografía <a href="page_survey_notes.htm">notas</a></li>
+<li><u>Añadir</u> <a href="page_man_data.htm"></a> una visual nueva manualmente</li>
+<li><a href="page_saved_station.htm">Última estacion guardada</a></li>
+<li><a href="page_azimuth.htm">Referencia de la orientación magnética</a></li>
+<li><a href="page_station_search.htm">Búsqueda de estación </a></li>
+</ul><br><p>
+
+<b>Pulsación larga sobre iconos </b><br>
+<ul style="margin-top:0">
+<li>"Descargar": interruptor DistoX </li>
+<li>"Dibujo": abrer inmediatamente el croquis más reciente </li>
+<li>"añadir datos Manuales": cuadro dialogo de calibración de instrumentos </li>
+<li>"Estación de Búsqueda": pasar al siguiente resultado toma </li>
+</ul><br><p>
+
+
+Pulsación larga sobre lista de estaciones entra en pantalla multitoma: <br>
+<ul style="margin-top:0">
+<li>Fija las tomas extendidas a la<u> izquierda </u></li>
+<li>Fija las tomas extendidas a la<u> derecha </u></li>
+<li><u>Eliminar</u> las tomas </li>
+<li><u>Cancelar</u> salir de la pantalla multitoma </li>
+</ul><br><p>
+
+<h4>Pantalla de dibujo </h4>
+A través del pantalla dibujo puede crear un croquis nuevo o abrir uno existente. Hay un botón para crear uno nuevo y una lista de dos columnas de la topografía actual . Los elementos de la columna de la izquierda, abren un croquis en vista del planta, en la columna de la derecha se abre en la vista de alzado. Puede cambiar entre ellas desde dentro de la pantalla de dibujo. <br><p>
+<!--
+If the 3D modelling is enabled there is also a button to create a new 3D model, and the existing 3D models are listed after the croquises.<br><p>
+-->
+
+<h4>Menú </h4>
+<ul style="margin-top:0">
+<li><u>Cerrar</u>: Cierra la topografía actual </li>
+<li><u>Info. topografía</u>: accede a la pantalla de las propiedades de la topografía </li>
+<li><u>Tomas eliminadas</u> Recupera las tomas eliminadas tanto en la lista como en el croquis <a href="page_undelete.htm">(recuperación)</a></li>
+<li><u>Tomas con Foto</u>: muesta las tomas con fotos </li>
+<li><u>Tomas con Sensor</u>: muesta las tomas con datos </li>
+<li><u>Cave3D</u>: muesta la topografía en 3d (requiere tener instalada la app<a page="manual14.htm">Cave3D</a>) </li>
+<li><u>DistoX</u>: cambia a la pantalla del dispositivo </li>
+<li><u>Ajustes </u>Todos los ajustes para la topografía</li>
+<li><u>Ayuda </u>muesta la ayuda de esta pantalla y acceso al manual topodrid</li>
+</ul><br><p>
+
+<h4>Ajustes de la topografía </h4>
+<ul style="margin-top:0">
+<li><i>Equipo</i>: el equipo de topógrafos predeterminado. Si el campo esta relleno con un nombre, se utiliza para establecer el campo "Equipo" cuando se crea otra topografía nueva. Escriba su nombre y el de los espeleólogos que topografían normalmente con usted. [Predeterminado] vacío </li>
+<li><i>Sentido de estaciones</i>: seleccione la <a href="page_station_policy.htm">política para generar las estaciones automáticamente.</a> [Predeterminado "Visual directa + Radiales"] </li>
+<li><i>Nombres de estaciones</i> especifica el tipo de nombres de estaciones alfanuméricas o numéricas [Predeterminado "alfanuméricas"] </li>
+<li><i>Estación de inicio</i>:nombre predeterminado para la primera estación. Puede ser anulado en la pantalla de la<i> nueva topografía</i>. [Predeterminado] vacio </li>
+<li><i>Tamaño miniaturas</i>: el tamaño de las imagenes en miniaturas [predeterminado 200, 80 min, max 400] </li>
+<li><i>X-Secciones compartidas</i>: si en la estación x-sección debería ser compartida predeterminado [Predeterminado no] </li>
+<li><i>Unidades de mdidas </i>
+<ul style="margin-top:0; margin-bottom:0">
+<li><i>Las unidades de longitud</i>: metros o pies [Predeterminado]  metros</li>
+<li><i>Unidades de ángulo</i>: grados sexagesimales 360º o centesimales 400º [grados] predeterminado sexagesimales  </li>
+<li><i>Unidades de croquis</i>: metros, yardas o 2 pies [Predeterminado] metros  </li>
+</ul>
+</li>
+<li><i>Ajustes de visuales </i>
+<ul style="margin-top:0; margin-bottom:0">
+<li><i>Precisión de una visual</i>: tolerancia angular (porcentaje) entre las tomas repetidas de una visual principal. A mayor numero menor precisión. [predeterminado 0.05, min 0]  </li>
+<li><i>Longitud Máxima de toma</i>: La mayor longitud de medición que se admite. tomas más largas son "excesos" [predeterminado, min 50 m 20 m] </li>
+<li><i>Longitud Mínima de toma</i>: La menor longitud de medición que se admite. Están resaltados con un fondo naranja [Predeterminado] 0.5 m </li>
+<li><i>Repeticiones de una visual</i>: número mínimo de repeticiones de tomas consecutivas para una visual principal.[Predeterminado 3, 2 min, max 4] </li>
+<li><i>Precisión toma lateral</i>: define la tolerancia <a href="page_azimuth.htm">toma "radial"</a> predeterminado [10, min 0, máx. 90] </li>
+<li><i>Precisión toma vertical</i>: (umbral de Therion "vthreshold"): Para introducir manualmente las tomas LRUD, son consideradas Oeste-este Norte-Sur cuando la toma de inclinación vertical supera el umbral [predeterminado 80, min 0, máx. 90] </li>
+<li><i>Toma Extendida</i>: ampliación de toma Fija o Relativa a la <a href="page_azimuth.htm"> referencia extendida </a>[Predeterminado] relativa </li>
+<li><i>Error de cierre de bucle</i>: Es recomendable no realizar la compensación, ya que esto permite ver gráficamente el error y detectar posibles errores en la topografía [Predeterminado] "ninguno". La compensación de bucles especiales sobre la base de "triángulos" es para <a href="page_trilateration.htm">trilateración</a> [E]. </li>
+<li><i>Añadir botón Ant/Sig.</i>: Si quiere añadir en pantalla, los botones anterior/siguiente en la pantalla de edición de toma [predeterminado] si </li>
+<li><i>Toma duplicada de una visual</i>: se duplican los campos en el cuadro de pantalla Entrada de toma manual [N] [no] predeterminado </li>
+<li><i>Compensación magnética</i>: Algunas tomas pueden ser influidas por campos magneticos, para solucionarlos se toman dos veces los datos de A a B y luego de B a A (la inversa). compensación de la declinación magnética. Se requiere política retrospectiva de auto-estación  [predeterminado ] no </li>
+<li><i>Temporizador</i>: retraso en segundos antes de medir las direcciones con los sensores de Android [predeterminado 10, min 0] </li>
+<li><i>Volumen del pitido</i>: temporizador el volumen del pitido [N] [predeterminado 50, 10 min, max 100] </li>
+</ul>
+</li>
+<li><i> <a href="page_fixed_list.htm">Configuración de la ubicación</a></i></li>
+<li><i> <a href="page_accuracy.htm">Ajustes de precisión</a></i></li>
+</ul><br><p>
+
+Para salir de la pantalla de datos de la topografía, pulse doble clik en el<u></u> botón Atrás de tu dispositivo. <br>
+Si la copia de seguridad automática está activada y el formato de archivo de datos predeterminado está establecido, se exportaran los datos cuando la pantalla está cerrada. <br><p>
+
+<a href="manual05.htm">&lt; datos de calibración</a> |
+<a href="manual07.htm">Lista de tomas &gt;</a>
+
+</body></html>
