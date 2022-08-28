@@ -1,0 +1,145 @@
+<html><body>
+<h2>MANUAL DE USUARIO TopoDroid</h2>
+<!-- NOW -->
+<i>marco.corvi@gmail.com</i><br><p>
+
+<img src="icon4.png"><br>
+TopoDroid es una aplicación de Android para la topografía de cuevas.  TopoDroid toma los datos sin procesar,  lo ayuda a organizarlos y produce el mapa de líneas de la topografía en el lugar.  Además,  puede dibujar dibujo alrededor del mapa de líneas mientras realiza el levantamiento,  lo que reduce la probabilidad de error al ingresar su dibujo y lo ayuda a detectar errores en los datos mientras todavía está en la cueva.  TopoDroid tiene muchas funciones para ayudarlo a aprovechar al máximo su trabajo en la cueva.  De esta manera,  un mapa de trabajo está casi listo cuando finaliza el viaje de reconocimiento.  
+<br><p>
+
+TopoDroid hace que el tiempo que pasas inspeccionando la cueva sea más efectivo.  El propósito de TopoDroid es ayudar a un topógrafo a recopilar datos con mayor precisión y hacer que la tarea topográfica sea más llevadera,  no sirve para producir el mapa final de la cueva.  Para ello ya existen buenos programas de PC.  <br><p>
+
+TopoDroid tiene cinco "niveles de actividad" diferentes.  Los niveles más bajos ya tienen suficientes funcionalidades para descargar datos,  administrar nombres de estaciones y dibujar dibujo simples.  Los niveles superiores se pueden utilizar para preparar datos y dibujo para un trabajo más fácil en la PC. <br><p>
+
+TopoDroid está diseñado para manejar un levantamiento a la vez,  no para administrar topografías complejos de levantamiento de cuevas que incluyen varios levantamientos diferentes.  No obstante,  incluye un <i>Cave Project Manager</i>, incluye un gestor de topografías de cuevas,  que se puede utilizar para componer levantamientos en un topografía de <i>3D Viewer</i>, con el que puede ver el 3D de levantamientos y topografías de cuevas. <br><p>
+
+TopoDroid funciona con DistoX,  Sap5 y Bric4.  Sin embargo,  los datos de la topografía se pueden ingresar manualmente.<br>
+Tenga en cuenta que los dispositivos Android (y stilus activos) pueden influir en las mediciones realizadas con un dispositivo electrónico, si están demasiado cerca. <br><p>
+
+<i>
+The Android robot is reproduced or modified from work created and shared by Google and used according to terms
+described in the Creative Commons 3.0 Attribution Licence.
+</i><br><p>
+
+<b><a href="page_quick.htm">TopoDroid quick guide</a></b><br><p>
+
+<img src="map_sample.png" alt="ICON" /><br><p>
+
+<b>DESCARGO DE RESPONSABILIDAD</b><br>
+<i>TopoDroid es una aplicación gratuita de código abierto y no tiene publicidad.  Viene sin garantía:  al usarlo usted acepta que los autores no son responsables de ninguna pérdida de datos en la que pueda incurrir o daño alguno,  en particular a DistoX,  Sap5,  Bric4.  Si bien los autores hacen todo lo posible para proporcionar una aplicación sin errores,  esto no está garantizado.</i>
+<hr><br><p>
+
+<h4>Carpeta privada de TopoDroid</h4>
+La carpeta privada de TopoDroid,  "Android/data/com. topodroid. TDX/files",  contiene las carpetas de las herramientas de dibujo,  "punto",  "línea" y
+"área",  y la base de datos del dispositivo "device10. sqlite" con los datos de calibración,  los archivos de calibración exportados (carpeta "ccsv"),  los archivos de firmware de DistoX2 (carpeta "bin") y los volcados de memoria de DistoX (carpeta "dump").
+<br><p> 
+
+Esta carpeta y su contenido se eliminan cuando se desinstala la aplicación,  a menos que marque la casilla para conservar los datos de la aplicación.  
+<br><p>
+
+<h4>Carpetas de topografías de TopoDroid</h4>
+El directorio base de TopoDroid es "Documentos/TDX",  en el almacenamiento primario externo.  Contiene la carpeta de la topografía "TopoDroid".  La carpeta de la topografía contiene la base de datos "DistoX14. sqlite",  la carpeta "zip",  una carpeta "tmp" para archivos temporales,  y se rellena con una carpeta para cada topografía que se crea.  
+<br><p>
+
+Esta carpeta y sus subcarpetas no se eliminan cuando se desinstala la aplicación.
+<br><p>
+ 
+<img src="folders.png" alt="FOLDERS" /><br><p>
+
+<h4>Datos de la topografía</h4>
+Los datos topográficos y los dibujo se guardan en la subcarpeta "TopoDroid" de TDX.  
+Cada topografía tiene una subcarpeta en "TopoDroid".  La carpeta "TopoDroid" contiene la base de datos,  "DistoX14. sqlite",  las carpetas de topografías y la carpeta de La topografía de cuevas,  "thconfig",  <br><p>
+
+<h4>Concesión de permisos de acceso</h4>
+En Android-11 y versiones posteriores,  es posible que TopoDroid no pueda crear la carpeta base "TDX",  o algunas subcarpetas o archivos en ella,  porque no tiene suficientes permisos para acceder al almacenamiento externo. br>
+En este caso,  puede otorgar permisos usando "adb" (Android Debug Bridge).<br>
+<ol>
+<li>descargue "adb" en su PC</li>
+<li>en Android,  habilite las "Opciones de desarrollador" (vaya a la configuración "Acerca del teléfono",  toque siete veces "Crear número")</li>
+<li> habilite "Depuración USB" en las "Opciones de desarrollador"</li>
+<li>en la PC,  inicie el servidor adb.  Ingrese el comando "adb start-server"</li>
+<li>conecta Android a la PC con un cable USB.  Es posible que deba permitir la conexión adb desde la PC,  en tu Android</li>
+<li>en la PC ingresa los tres comandos:
+<ul>
+<li>Las aplicaciones de shell adb establecen com. topodroid. TDX READ_EXTERNAL_STORAGE permiten</li>
+<li>Las aplicaciones de shell adb establecen com. topodroid. TDX WRITE_EXTERNAL_STORAGE permiten</li>
+<li>Las aplicaciones de shell adb establecen com. topodroid. TDX MANAGE_EXTERNAL_STORAGE permiten</li>
+</ul>
+</li>
+</ol>
+<br><p>
+
+<h4>Importación de topografías antiguas</h4>
+TopoDroidX (v.6) can be installed together with the old v. 5.1.40 because they use different base folders.<br>
+TopoDroidX (v. 6) se puede instalar junto con la antigua v.  5. 1. 40 porque usan diferentes carpetas base.  La topografía antiguas v. 5. 1. 40 se pueden importar en v. 6 desde sus archivos zip creados con el antiguo TopoDroid.  
+También se pueden crear con el 
+<!-- a href="http://marcocorvi.altervista.org/caving/speleoapps/speleoapks/TopoDroidZipScript.html" -->
+http://marcocorvi.altervista.org/caving/speleoapps/speleoapks/TopoDroidZipScript.html
+<!-- /a -->
+<br><p>
+
+<b>N.B.</b> TopoDroid v. 5. 1. 40 no puede importar archivos zip v. 6,  debido a cambios en la base de datos. <br><p>
+
+<h4>Características de hardware</h4>
+TopoDroid utiliza las siguientes funciones de hardware:  "bluetooth",  "cámara",  "micrófono",  "GPS",  "multitáctil".
+Las funciones de TopoDroid que requieren una función que no está presente en su dispositivo Android se desactivan automáticamente.
+<br>
+La conexión a Internet se usa solo para instalar las traducciones del manual del usuario.<br>
+<a href="page_perms.htm">Android permissions</a>
+<br><p>
+
+
+<h4>Errores y caídas</h4>
+Debido a los recursos limitados,  la aplicación no se puede probar por completo.  Haz una copia de seguridad de la aplicación y de la base de datos de la topografía antes de actualizar la aplicación.  <br><p>
+
+<ul style="margin-top=0">
+<li>Los bloqueos después de una elección de selección pueden deberse a traducciones incompletas. 
+Ejecute la aplicación con idioma inglés; si el bloqueo desaparece, comuníquese con el encargado de la traducción. </li> 
+<li>Si encuentra un error o la aplicación no se comporta como espera,  envíeme un correo electrónico.
+<b>Incluye la versión de la aplicación y la versión de Android.</b>.</li>
+<li> Para preguntas generales y solicitudes de funciones,  envíe un correo electrónico a la lista de correo de TopoDroid.  </li>
+</ul><br><p>
+
+<hr>
+<b>Traducciones de la aplicación:</b><br>
+<ul>
+<!-- li>V. Georgiev (Bulgarian)</li -->
+<li>H.J. Luo (Chinese)</li>
+<!-- li>D. Ros (French)</li -->
+<!-- li>M. Keller (German)</li -->
+<li>B. Holl (Hungarian)</li>
+<li>F. Toso (Italian)</li>
+<!-- li>K. Borgiel (Polish)</li -->
+<!-- li>R. Severo (Portuguese)</li -->
+<!-- li>A. Pologea (Romanian)</li -->
+<li>A. Kozhenkov (Russian)</li>
+<!-- li>M. Jurecka - J. Hetesi (Slovak)</li -->
+<li>M. Guerrero - J. Pardo (Spanish)</li>
+<!-- li>V. Kozly (Ukrainian)</li -->
+</ul>
+<br><p>
+
+Privacy policy: <!-- a href="http://marcocorvi.altervista.org/policy/TopoDroid-PrivacyPolicy.txt" -->http://marcocorvi.altervista.org/policy/TopoDroid-PrivacyPolicy.txt<!-- /a --><br>
+Sitio web: https://sites.google.com/site/speleoapps/<br>
+Fuentes: https://github.com/marcocorvi/topodroid<br><p>
+
+<b>Traducciones de manuales de usuario</b><br>
+<ul>
+<li>A. Kozhenkov - Russian: https://github.com/akozhenkov/TD_manual_RU</li>
+<li>M. Guerrero - Español https://github.com/xguerrero/Topodroid_manual_es</li>
+<li>F. Toso - Italian: https://github.com/fato63/TopoItMan</li>
+<li>D. Ros - French: http://souterweb.free.fr/</li>
+<li>B. Holl - Hungarian: https://github.com/BalazsHoll/TopoDroid_manual_hu</li>
+</ul>
+<p>
+
+Las traducciones de los manuales de usuario pueden ser bastante antiguas si no se mantienen.  Se instalan eligiendo el idioma de traducción en la configuración adecuada de la <u>pantalla principal.</u>.
+(requiere conexión a Internet).<br><p>
+
+Si ha instalado una traducción manual y hay una actualización,  se le solicitará que instale la actualización de la traducción cuando actualice la aplicación.
+<br><p>
+
+
+<a href="manual01.htm">Introduction &gt;</a>
+
+</body></html>
