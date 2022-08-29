@@ -1,0 +1,82 @@
+<html><body>
+<h3>[11] SECCIONES TRANSVERSALES</h3>
+
+Las secciones en X son algo especiales porque no pertenecen al dibujo sino que son dibujo independientes asociados a la planta o al alzado.  TopoDroid tiene dos tipos de secciones en X: <u>leg</u> secciones en X y <u>estación</u> secciones en X. Los primeros cruzan una poligonal principal,  los segundos se definen en una estación.<br><p>
+
+Una sección x en planta siempre está en un plano vertical y la dirección hacia arriba es la vertical.  La sección x de un alzado está en un plano con la inclinación definida por la línea de sección.<br>
+La dirección hacia arriba es el Rumbo de la poligonal principal cruzada.
+Sin embargo,  si la inclinación de la planta de la sección x está por encima de un "umbral horizontal",  la sección se considera "horizontal" y la dirección hacia arriba es el norte magnético. <br><p>
+
+Puede asignar un comentario a una sección transversal. <br><p>
+
+
+<b>Secciones x de poligonal principal</b><p>
+Para decirle a TopoDroid que desea dibujar una sección en X,  debe dibujar una línea de "sección",  ya sea en la vista en planta o en la vista de alzado.  La línea de sección define la posición de la sección X y su orientación. <br><p>
+
+Para decirle a TopoDroid que desea dibujar una sección en X,  debe dibujar una línea de "sección",  ya sea en la vista en planta o en la vista de alzado.  La línea de sección define la posición de la sección X y su orientación.  Una sección x es la forma de la cueva en un plano que la corta.  La orientación de la sección x es la orientación de este plano,  es decir,  la dirección de la línea perpendicular al plano,  y apuntando en la dirección de la vista.  La orientación de la sección X se define por la forma en que traza la línea de sección.  Como indicador,  la línea de sección tiene una marca que apunta desde la línea a la dirección de vista de la sección X.  <br>
+El tamaño de este "tick" se puede ajustar en el cuadro de diálogo de configuración. <br><p>
+
+Puede elegir entre una sección transversal de la foto y una sección transversal del dibujo.  En el primer caso,  solo toma una foto que te recuerde la forma de la galería cuando estés dibujando el mapa de la cueva.  Asegúrese de tener un compañero espeleólogo en la imagen que sirva como referencia de tamaño.<br><p>
+
+En el segundo caso,  dibuja la sección X en un lienzo con las herramientas de dibujo habituales de TopoDroid.  Como referencia,  TopoDroid muestra la toma de la poligonal principal atravesada por la sección X y las tomas separadas en sus puntos finales. La estación de enfrente (la que mira la sección X) está centrada en la cuadrícula.  Las tomas separadas en el frente son de color gris claro,  las de atrás son de un gris más oscuro y más delgado.  Todos los planos se muestran proyectados sobre la planta de la sección x.  Un punto blanco marca la intersección de la planta de sección con el lado [T]. <br><p>
+
+Las secciones en X de la poligonal principal se pueden volver a abrir y modificar seleccionando, en el modo "editar",  la línea de sección o el punto de sección y tocando el botón de edición. <i>edit</i> button.<br><p>
+
+<b>Secciones en X en la vista en planta</b><br>
+Las secciones en X definidas en la vista en planta son siempre "verticales" (inclinación cero).  Su orientación (es decir,  el Rumbo de la planta de sección x) está determinada por el ángulo de la línea de sección.  Muy a menudo,  la planta de la sección es perpendicular a la galería,  pero puede estar en cualquier ángulo necesario.  Por ejemplo,  una línea de sección dibujada de izquierda a derecha (p.  ej. ,  horizontal,  ángulo de 90&deg; desde la vertical) tiene una dirección de vista hacia el norte (arriba,  rumbo 0).  Si se dibuja ligeramente hacia abajo en un ángulo de 120,  tendrá una dirección de vista con un Rumbo de 30&deg;.<br>
+El tramo cruzado se muestra vertical cuando la sección x tiene el mismo rumbo que el tramo.  De lo contrario,  está inclinado derecha o izquierda.<br><p>
+
+En la vista en planta,  es posible hacer una sección en X que cruce varios lados.  Todas la poligonal principal cruzadas y los laterales en sus estaciones se muestran como referencia de dibujo de sección x.  El punto de cruce está marcado en cada tramo.  <br>
+
+<img src="plan-xsection.png" >
+<br><p>
+
+<b>Secciones en X en el alzado</b><br>
+Las secciones en X en la vista de alzado pueden ser "horizontales" (en tomas verticales en fosos) o "verticales" (en galerías más o menos horizontales).  Se consideran "horizontales" si su inclinación supera el valor del ajuste del umbral H.  El Rumbo de las secciones en x verticales está determinado por el de la poligonal principal cruzada.<br><p>
+
+Las secciones transversales "horizontales" se muestran siempre con el norte hacia arriba.  Además,  se les añade una línea de referencia de 5 m de longitud,  orientada al Norte.  La poligonal principal se muestra en su rumbo.<br>
+Las secciones en x "verticales" siempre tienen el rumbo del tramo cruzado (o el opuesto si la dirección de la línea de sección es opuesta a la del tramo).  El tramo cruzado se muestra vertical ya que la sección X tiene el mismo rumbo que el tramo.<br><p>
+
+Si la línea de la sección se traza de derecha a izquierda,  la sección x está orientada hacia abajo y tiene una inclinación de -90&deg;. Esta es una sección transversal "horizontal" vista desde arriba.  La mayoría de las veces querrá dibujar secciones "horizontales" de esta manera,  ya que es más natural colocar un mapa sobre una superficie y mirarlo hacia abajo.  Si traza la línea de sección de izquierda a derecha,  la sección x está orientada hacia arriba (inclinación +90&deg;).<br><p>
+
+En la vista de alzado,  la sección transversal del tramo  debe cruzar un solo tramo. <br><p>
+ 
+<img src="profile-xsection.png" >
+<br><p>
+
+<b>Puntos de sección</b><br>
+Si la configuración para los "puntos de sección automáticos" está marcada,  cuando inserta una sección X,  ya sea dibujando una línea de sección o insertándola en una estación,  el punto de sección correspondiente se agrega al dibujo.
+Los puntos de sección se muestran como cuadrados blancos y una línea naranja que los conecta con la línea de sección o estación relativa.  Si se elimina la sección transversal,  también se elimina el punto de sección correspondiente.<br><p>
+
+<b>archivos de sección X</b><br>
+Cada sección transversal se guarda en un archivo separado en la subcarpeta "tdr".  Los archivos obtienen nombres consecutivos "MySurvey xx0. tdr",  "MySurvey-xx1. tdr",  etc.  La parte numerada "xx0" del nombre también se muestra en el cuadro de diálogo Sección que aparece cuando crea  edita una sección.<br>
+El archivo se elimina cuando se elimina una sección transversal.  <br><p>
+
+Las secciones X se pueden exportar en otros formatos al igual que los otros dibujo,  excepto en formato <i>cSurvey</i> Las secciones X se incluyen en las exportaciones de dibujo en DXF,  SVG, <i>cSurvey</i>, siempre que exista el punto de sección asociado.<br><p>
+
+<b>Secciones X de estación [E]<br>
+Esta es otra forma de insertar secciones transversales.
+El cuadro de diálogo "Estación",  que se obtiene al tocar un punto de estación en el modo de<i>Edit</i> muestra las coordenadas de la estación y tiene algunos botones:
+<ul style="margin-top=0">
+<li>"Continuar" el levantamiento desde la estación.  Establezca la estación como la "estación activa",  es decir,  aquella a la que la siguiente se adjuntará una toma</li>
+<li>Reiniciar" la visualización de la línea central después de la estación.  </li>
+<li>"cambiar" la visualización de las pantallas en la estación.</li>
+<li>Sección X" [E] abre una <u>sketch window</u> ara dibujar una sección X en la estación.</li>
+</ul>
+
+Si el clino medio de las tomas en la estación es menor que el "umbral vertical",  la sección x en una estación se dibuja en un plano vertical que pasa por la estación; de lo contrario,  es horizontal.
+La sección x de la estación es útil cuando toma varias tomas dispersas alrededor de la estación para describir la forma de la galería.  la planta de la sección x se puede orientar con el botón de la <i>compass</i>.
+Si la estación tiene solo dos tomas,  la planta puede orientarse a lo largo de la bisectriz de los ángulos formados por las (proyecciones horizontales de las) tomas.  Si solo hay una poligonal principal,  puede orientarse ortogonalmente a esa.  Si hay más de dos tomas tienes que usar el botón de la
+<i>compass</i> button.<br><p>
+
+Las secciones X de la estación se pueden volver a abrir y modificar seleccionando,  en el modo "editar",  la estación o el punto de la sección y tocando el <i>edit</i> button.<br><p>
+
+Ver también<br>
+<a href="page_sketch_station.htm">Diálogo de edición de estación de dibujo</a>,<br>
+<a href="page_line_dialog.htm">Diálogo de edición de línea de dibujo.</a>.
+<br><p>
+
+<a href="manual10.htm">&lt; Dibujo de croquis</a> |
+<a href="manual12.htm">Ventana de resumen &gt;</a>
+
+</body></html>
