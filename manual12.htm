@@ -1,0 +1,66 @@
+<html><body>
+<h3>[12] pantalla de descripción general</h3>
+
+Accede a la <u>pantalla de descripción general</u> desde la <i>descripción general</i> en el menu <u>ventana de dibujo</u>.
+<br><p>
+
+La <u>pantalla de descripción general</u> muestra todos los dibujo juntos,  ya sea en planta o en una vista de alzado ampliada según en la vista de la <u>ventana de dibujo</u>.
+La <u>pantalla de descripción general</u> puede estar en modo normal (cambio de lienzo y zoom) o en modo de medición.<br><p>
+
+<b>BUTONES</b><br>
+<ul style="margin-top=0">
+<li><img src="btn_measure.png"> cambia la pantalla en "modo de medición"</li>
+<li><img src="btn_mode.png"> referencia.  Cuadro de diálogo para activar/desactivar la visualización de la línea media,  Las tomas separados,  los nombres de las estaciones,  la métrica cuadrícula y barra de escala.  También hay una casilla de verificación para ocultar los detalles de la cueva y mostrar solo el contorno. </li>
+<li><img src="btn_angle.png"> medición.  Si es "ángulo",  distancia y ángulo entre dos puntos.  Si es "polilínea",  longitud total de una polilínea trazada tocando las posiciones de los nodos  </li>
+<li><img src="btn_undo.png"> deshacer.  Elimina el último punto de la polilínea.</li>
+</ul>
+<br><p>
+
+Cuando la pantalla está en <i>modo de medición</i> el primer botón tiene un color verde brillante.  En este modo,  el dibujo se puede trasladar arrastrando la esquina (si está activado) y ampliarlo con los botones de zoom (si está activado).
+<br><p>
+
+<h4>Medida de segmento</h4>
+Cuando la <u>pantalla de descripción general</u> está en modo de medición,  puede medir la distancia entre dos puntos en el lienzo.  Para hacer esto,  toca primero el primer punto:  esto se muestra como una cruz rosa en un círculo.  A continuación,  toque en el segundo punto:  se muestra con una cruz azul y la distancia 2D se muestra en la barra de título,  junto con las diferencias en los ejes X e y   y el rumbo (plano) o inclinación (alzado extendido).  Las unidades de distancia son las unidades de cuadrícula del dibujo (metro,  yarda,  2 pies o dm).  El ángulo está en las unidades angulares actuales (grados o grados).  <br>
+Cualquier toque adicional cambia el segundo punto (y los valores de medida).<br><p>
+
+Para finalizar la medición,  toque el botón "modo de medición".<br><p>
+
+La distancia se calcula en la planta del lienzo.  En la vista en planta,  esta es la distancia horizontal.  En la vista de alzado ampliada,  la diferencia del eje Y es la diferencia de elevación.  <br><p>
+
+<h4>Medida de polilínea</h4>
+La medida "polilínea" es útil para obtener una estimación de la "longitud" de la cueva,  más sensible que la longitud de la línea media.  Toca el inicio de la polilínea y los toques adicionales marcan los nodos de la polilínea.  Si comete un error,  toque<i>Deshacer</i> para eliminar los últimos puntos de uno en uno.<br><p>
+
+El título muestra la distancia entre los dos puntos finales,  la longitud de la polilínea,  el desplazamiento XY entre los puntos finales y el ángulo.<br><p>
+
+<img src="polyline.png" alt="polyline measure">
+<br><p>
+
+<b>MENUS</b><br>
+<ul style="margin-top=0">
+<li>Cerrar la pantalla</li>
+<li>Exportar [T]</li>
+<li>Configuración</li>
+<li>Ayuda</li>
+</ul>
+<br><p>
+
+<b>Exportar</b><br>
+El resumen se puede exportar en los siguientes formatos:
+<ul>
+<li><i>Therion</i></li>
+<li>SVG</li>
+<li>DXF (<i>LibreCAD</i>)</li>
+<li>shapefile (<i>QGIS</i>)</li>
+<li>xvi (<i>xtherion</i>)</li>
+</ul><br>
+
+Cada dibujo se asigna a un "recorte" en la exportación de Therion.  Para los otros formatos de exportación,  los dibujo se colocan en un solo dibujo.<br>
+Los puntos de estación no se incluyen automáticamente en la exportación de therion; solo se agregan estaciones definidas por el usuario.<br>
+Las estaciones se agregan automáticamente a las exportaciones SVG,  DXF,  shapefile y xvi.<br>
+Si hay puntos de "sección",  se incluyen las secciones x.  
+<br><p>
+
+<a href="manual11.htm">&lt; X-sections</a> |
+<a href="manual13.htm">Importar/Exportar &gt;</a>
+
+</body></html>
