@@ -1,0 +1,167 @@
+<html><body>
+<h3>[15] VISOR 3D (Cave3D)</h3>
+
+El visor 3D TopoDroid está diseñado para usarse en cuevas y no requiere conexión a Internet. <br>
+También puede cargar otros formatos de archivo:  Therion (th,  thconfig),  Loch,  Compass (dat,  mak) y VisualTopo. <br><p>
+
+El modelo 3D se puede abrir desde un menú en la   <i>pantalla de datos</i>, o desde un botón en la <i>pantalla de información de topografía</i>.<br>
+El modelo 3D de un topografía de cueva se puede abrir desde un botón en la  <i> pantalla de la topografía</i>.
+<br>
+El modelo se muestra con una cuadrícula de referencia (azul norte,  verde este) o triplete (rosa hacia arriba).  
+<br><p>
+
+
+
+<h4>BOTONES</h4>
+<ul style="margin-top:0">
+<li><i>Mover - Luz:</i>: Mueve el modelo o la luz.  Dos dedos siempre escalan y traducen el modelo.</li>
+<li><i> Vista: </i>: Perspectiva u ortográfica.</li>
+<li><i>Estaciones</i>: Estaciones:  Mostrar/ocultar estación.  Puntos verdes o nombres.</li>
+<li><i>Laterales</i>: muestra/oculta los laterales.  Líneas o extremos.</li>
+<li><i>Paredes</i>: Mostrar/ocultar paredes (si se crearon). </li>
+<li><i>Superficie</i>: muestra/oculta la superficie DEM (si está presente). </li>
+<li><i>Color</i>: Código de colores de la línea central.  Blanco,  por levantamiento o profundidad.</li>
+<li><i>Cuadrícula</i>: cambie entre la cuadrícula y el eje XYZ.</li>
+</ul><br>
+Los iconos de los botones se ajustan al estado del programa.  
+<br><p>
+
+Algunos botones se accionan mediante una pulsación larga: 
+<ul>
+<li><i>Vista</i>: ajuste el parámetro focal de la perspectiva. </li>
+<li><i>Estaciones</i>: activa o  desactiva la selección de estaciones.</li>
+<li><i>Color</i>: Seleccione La topografía para mostrar u ocultar.</li>
+<li><i>Cuadrícula</i>: Seleccione la visualización de superficies/ duplicados/tramos comentados.</li>
+</ul>
+<br><p>
+
+<h4>MENU</h4>
+<ul style="margin-top:0">
+<li><i>Abrir archivo</i>: Seleccione un archivo de topografía de la carpeta de trabajo.</li>
+<li><i>Exportar</i>: cuadro de diálogo Exportar.</li>
+<li><i>Info</i>: Estadísticas de la topografía.</li>
+<li><i>3D-Diagrama de Rosas</i>: Estadísticas de la topografía.</li>
+<li><i>Diagrama de rosas</i>:  Distribución de direcciones de Rumbos. </li>
+<li><i>Restablecer</i>: restablece la vista superior ortogonal,  en el zoom uno. </li>
+<li><i>Punto de vista</i>: seleccione un punto de vista entre superior,  norte,  este,  sur y oeste.  Por ejemplo,  "sur" significa mirando la cueva desde el Sur.</li>
+<li><i>Superficie</i>: Transparencia y archivo DEM.  Proyección de la línea central en la superficie.</li>
+<li><i>Modelos de pared</i>: cree o borre una reconstrucción 3D de pared.  Alternar proyecciones de plano/alzado de paredes</li>
+<li><i>dibujo</i></li>
+<li><i>Opciones</i></li>
+<li><i>Ayuda</i></li>
+</ul><br><p>
+
+<h4>OPCIONES</h4>
+<ul style="margin-top:0">
+<li></i>Ruta base</i>:  Carpeta que contiene los archivos de levantamiento</li>
+<li></i>Radio de selección</i> :  Radio de selección para estaciones</li>
+<li><i>Diálogo de estación</i>:  si abrir el diálogo de estación para la estación seleccionada [n]. </li>
+<li><i> Puntos de estación</i>:  si mostrar siempre los puntos de estación (verde) [n]. </li>
+<li><i>Cuadrícula superior</i>:  muestra la cuadrícula en la parte superior [n].</li>
+<li><i>Extensión de cuadrícula</i>:  cantidad de extensión de cuadrícula alrededor del levantamiento [10 celdas]. </li>
+<li><i> Vista por debajo del horizonte</i>:  si permitir puntos de vista por debajo del horizonte [n].</li>
+<li><i>Búfer DEM</i>:  Extensión del modelo de superficie alrededor del levantamiento al cargar el modelo de superficie desde un DEM expediente.</li>
+<li><i>Tamaño máximo DEM</i>:  tamaño máximo de DEM de superficie en cada dirección [400 celdas].</li>
+<li><i>Reducción DEM</i>:  cómo reducir el DEM si es demasiado grande (submuestra o clip) [submuestra].  </li>
+<li><i>All Tomas laterales</i>:  si usar todos los laterales para las paredes</li>
+<li><i>Dividir triángulos</i>:  si dividir los triángulos de las paredes que se cruzan</li>
+<li><i>Puntos aleatorios</i>:  agregue un pequeño vector aleatorio a las laterales</li>
+<li><i>Estirar paredes</i>:  cambie los puntos de la pared una pequeña cantidad a lo largo de la poligonal principal</li>
+<li><i>Powercrust</i> :  Parámetro "delta" del algoritmo</li>
+<li><i>Dispositivo Bluetooth</i>:  nombre del dispositivo Bluetooth.</li>
+</ul><br><p>
+
+<b>LÍNEA DE TÍTULO</b><br>
+La barra de título muestra los parámetros de visualización:
+<ul>
+<li><i>C</i> y <i>A</i>  clino y rumbo del mirador.  </li>
+<li><i>S</i> es el factor de zoom.</li>
+<li><i>T</i> son las traslaciones XY del modelo.</li>
+<li><i>L</i> son el clino y el rumbo de la luz.</li>
+</ul>
+<br><p>
+
+<b>EXPORTACIONES</b><br>
+El modelo se puede exportar a DXF,  KML,  STL o STL-binary   CGAL,  LAS-binary y shapefile.<br>
+El archivo exportado se guarda en la carpeta "c3export" del directorio de trabajo actual.
+<br><p>
+
+Hay opciones para incluir pantallas,  paredes,  estaciones y superficies en la exportación.  El modelo también se puede serializar en un archivo de texto.
+<br><p>
+
+<b>CUADRÍCULA/MARCO</b><br>
+Las líneas de cuadrícula/marco son verdes (oeste-este),  azules (sur-norte) y rojas (verticales).<br>
+En perspectiva,  la cuadrícula se ve verdosa hacia el norte/sur porque las líneas verdes se apilan más juntas.  Y se ve azulado hacia el oeste/este.  Para ayudar a distinguir las direcciones cardinales,  la cuadrícula se vuelve ligeramente rojiza en la esquina oeste-sur.<br>
+De forma predeterminada,  la cuadrícula está debajo de la topografía,  pero se puede configurar encima de ella (opcionalmente).
+<br><p>
+
+<b>TOPOGRAFÍA</b><br>
+Las visualizaciones de la topografía se pueden ocultar,  mostrar como líneas o puntos finales. <br>
+Las tomas de la topografía pueden estar sin color o coloreadas por la topografía,  por la profundidad (de rojo a azul) o por la profundidad debajo de la superficie (de azul a rojo). <br>
+
+Cuando no están coloreados,  los tramos de la topografía son blancos,  los tramos de la superficie son verdes,  los tramos duplicados de color naranja y los tramos comentados son de color azul claro. <br>
+
+Los tramos de "superficie",  "duplictae" y "comentados" se pueden activar/desactivar con el cuadro de diálogo "tramos" que se abre con un pulsación larga en el cuarto botón.
+<br><p>
+
+<b>PAREDES</b><br>
+El modelo de pared no se calcula automáticamente cuando se abre el archivo,  sino que debe ser solicitado por el usuario a través del menú  "pared".  Hay tres modelos: <i>casco simple</i>, <i>pseudo-casco conevx</i>, y <i>powercrust</i>.
+Los dos primeros son adecuados cuando los Tomas laterales no son densas<br>
+
+El tercero es para extensiones densas.  El modelo de la pared depende del número y la calidad de los laterales.<br>
+
+Las malas separaciones darán como resultado un modelo pobre.  El cálculo se realiza en segundo plano. 
+Cuando termine,  la pared se puede mostrar con el botón "pared".<br><p>
+
+El modelo powercrust incluye también la proyección de los muros sobre la planta horizontal (vista en planta),  y sobre una cortina vertical a lo largo del levantamiento (vista de alzado).  Su visualización se habilita a través del menú "paredes".
+<br><p>
+
+<b>SUPERFICIE</b><br>
+Si el modelo (Therion o Loch) contiene datos de superficie (Modelo de elevación digital),  la superficie se puede mostrar en gris o con la textura (si está disponible).<br>
+El cuadro de diálogo de superficie tiene un botón para cargar un DEM desde un archivo.  Los formatos admitidos son ascii (. asc o . ascii) y Rejilla Therion (. grid).  Solo se carga la parte relevante del archivo DEM. <br>
+El levantamiento y el archivo de datos DEM deben estar en el mismo Sistema de Referencia de Coordenadas Cartográficas.
+Si las coordenadas del punto fijo del levantamiento se han transformado en otro sistema de referencia,  las coordenadas transformadas se utilizan para hacer referencia al modelo.  Si solo tiene coordenadas long-lat (WGS84),  el sistema WGS-84<br><p>
+
+se usa La transparencia de la superficie es ajustable.  Si es completamente opaca,  las partes de la superficie detrás de otras quedan ocultas.<br>
+Se puede mostrar la proyección de la línea central del levantamiento en la superficie (azul).<br>
+Cuando el modelo tiene una superficie,  se puede colorear por la profundidad debajo de la superficie.
+<br><p>
+
+If the model has a surface DEM, Si el modelo tiene un DEM de superficie,  la textura de la superficie se puede cargar desde un archivo.  Los formatos de archivo admitidos son GeoTiff y OSM.<br>
+El archivo GeoTiff debe estar en el mismo Sistema de Referencia de Coordenadas Cartográficas del levantamiento.
+[Nota técnica:  si el archivo es de 24 bits sin comprimir o utiliza un mapa de colores Cave3D intenta leer solo la parte que cubre el DEM de lo contrario,  se lee toda la imagen y se extrae una parte del área. ]
+La textura OSM (WGS84) solo se puede cargar para levantamientos y topografías de cuevas abiertos desde TopoDroid.  La textura muestra las líneas OSM.
+<br><p>
+
+Es posible visualizar un punto (punto amarillo) en la superficie ingresando las coordenadas Este/Norte en el SRC del modelo<br>
+
+Los modelos cargados desde TopoDroid también pueden obtener puntos GPS.  Si la aplicación tiene permiso para usar el servicio de "Ubicación" y este servicio está habilitado,  es posible obtener un punto de superficie con el GPS de Android.<br>
+Dado permisos para usarlo.<br>
+La aplicación muestra los últimos 10 puntos.  
+<br><p> 
+
+<b>ACCIONES DE LA ESTACIÓN</b><br>
+Por defecto,  cuando se muestran las estaciones,  se pueden seleccionar tocando el punto o el nombre de la estación.<br>
+ La selección de estación se puede encender/apagar con un pulsación larga en el botón "estación".  Cuando las estaciones son seleccionables el botón tiene un punto rojo.<br><p>
+
+La estación seleccionada se resalta en rojo y sus coordenadas se muestran en una barra azul en la parte inferior.  Si el modelo tiene un DEM,  se incluye la profundidad de la estación debajo de la superficie.<br>
+Para deseleccionar la emisora,  toque de nuevo la emisora o la barra. <br><p>
+
+Para medir distancias entre la estación seleccionada y otra estación,  marque el botón "medir" en la barra inferior y toque la otra estación.  La distancia 3D entre las dos estaciones,  sus componentes este,  norte y vertical,  y la distancia 2D de la planta se muestran en un cuadro de diálogo.  <br><p>
+
+Opcionalmente,  los valores se pueden mostrar en un breve cuadro de mensaje en lugar de un cuadro de diálogo.  Cuando se marca el botón "estación" en la barra inferior,  la posición de la estación en la pantalla se fija bajo rotaciones y la estación seleccionada se resalta en naranja.  
+
+<b>ELEVAR CROQUIS</b> (Experimental)<br>
+Con levantamientos y topografías de cuevas abiertos desde TopoDroid,  es posible "elevar" dibujo 2D al modelo 3D.  
+El dibujo debe exportarse (en TopoDroid) en formato "Cave3D".  El archivo exportado está en la carpeta "c3d" de TopoDroid.  A continuación,  se puede cargar un archivo de dibujo desde el visor 3D y el dibujo se eleva para adaptarlo al modelo 3D.<br>
+
+El cuadro de diálogo de dibujo muestra la lista de dibujo abiertos.  Cada elemento tiene dos casillas de verificación:  la primera para activar o desactivar la visualización del dibujo,  la segunda para eliminar el dibujo.  Las elecciones deben confirmarse con el botón "OK".  <br>
+Hay un botón para cargar un nuevo dibujo.<br>
+Finalmente,  hay un botón para volver a vincular los iconos de puntos,  si se vuelven negros.
+<br><p>
+
+
+<a href="manual14.htm">&lt; Topografías de Cuevas</a> |
+<a href="manual16.htm">Indice &gt;</a> 
+
+</body></html>
