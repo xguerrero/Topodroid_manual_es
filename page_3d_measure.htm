@@ -1,0 +1,30 @@
+<html><body>
+<h4>VISOR 3D - Cuadro de diálogo Medir</h4>
+
+Cuando se selecciona la estación fija, sus coordenadas aparecen en una barra azul
+en la parte inferior de la pantalla.<br>
+
+Esta barra tiene dos botones:
+<ul>
+<li> el triángulo verde establece la estación como centro de rotaciones </li>
+<li> la regla verde, cambia el programa en "modo de medición": tocando en otro estación abre el cuadro de diálogo <i> Medir </i> con el resultado de la medición. </li>
+</ul> <br> <p>
+
+El cuadro de diálogo <i>Medir</i> muestra la distancia entre la estación fija y otra seleccionada.<br>
+<ul>
+<li>Tambien muestra, los nombres completos de las dos estaciones</li>
+<li>el Este, el Norte y el desplazamiento vertical entre las dos estaciones</li>
+<li>la distancia 3D</li>
+<li>la distancia en el plano horizontal</li>
+<li>el rumbo y la inclinación de la línea recta entre las dos estaciones</li>
+<li>si existe, la longitud del camino más corto a lo largo de la línea media de la cueva entre las dos estaciones y las desnivelaciones positivas y negativas</li>
+</ul> <br> <p>
+
+<b>Desnivelaciones</b> <br>
+La desnivelación positiva y negativa se calculan sumando los componentes verticales de las visuales laterales hacia arriba y hacia abajo, respectivamente.
+Solo las visuales con inclinación superior a 10 & deg; son considerados.
+Por encima de 30 & grados; el componente vertical de la visual se tiene totalmente en cuenta.
+Entre 10 y 30 & grados; la componente vertical se interpola linealmente, es decir, se multiplica por (clino-10)/20.<br> <p>
+
+
+</body></html>
