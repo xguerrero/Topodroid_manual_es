@@ -1,0 +1,27 @@
+<html><body>
+
+<h4>EL MAPA FINAL</h4>
+
+Esta sección describe el uso de <i>Therion</i> o <i>cSurvey</i> para redactar el mapa final.<br><p>
+
+<b>Therión</b><br>
+Si desea compilar el proyecto <i>Therion</i>, debe proporcionar un archivo <i>thconfig</i> que puede ser tan simple como<br>
+<código>
+   fuente my_survey.th
+<br>
+   exportar mapa -proy plan -o my_cave_p.pdf
+<br>
+   exportar mapa -proj extendido -o my_cave_s.pdf
+</código><br><p>
+
+Debe haber exportado los datos topográficos como archivo Therion ".th" y los dibujos topográficos como archivos Therion ".th2".<br>
+El archivo de datos contiene comandos para ingresar archivos de croquis. Sin embargo, están comentados y es necesario descomentarlos.<br>
+El archivo de datos contiene comandos para definir un mapa para cada croquis (recorte). Para topografías simples, puede dejarlas comentadas.<br><p>
+
+Alternativamente, puede exportar los dibujos como archivos ".xvi" de Therion y volver a trazarlos usando <i>xtherion</i>.<br><p>
+
+<b>cSurvey</b><br>
+Exporte el dibujo como archivo cSurvey ".csx".<br>
+Abra el archivo exportado con <i>cSurvey</i>: tendrá la hoja de datos llena de datos de la topografía y los dibujos correctamente alineados en el lienzo de dibujo de<i>cSurvey</i>.<br><p>
+
+</body></html>

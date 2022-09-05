@@ -1,0 +1,69 @@
+<html><body>
+
+<h4>FIRMWARE DistoX2</h4>
+
+TopoDroid incluye los firmwares DistoX2 v. 2.1, 2.2, 2.3, 2.4 y 2.5, que son todos compatibles con el hardware 1.0.<br>
+Solo la versión 2.5 es compatible con el hardware 1.1.<br>
+TopoDroid incluye también firmwares v. 2.6.1, 2.6.3 y 2.6.4 que son compatibles con el hardware 1.2.<br><p>
+
+<b>ADVERTENCIA.</b><br>
+<b>La carga de un firmware incompatible hace que su DISTOx quede inutilizable.</b><br>
+<b>Lea atentamente todos los mensajes antes de cargar un nuevo firmware.</b><br><p>
+<p>
+
+A través del cuadro de diálogo de firmware, puede guardar una copia del firmware actual de su DistoX2 o cargar un nuevo archivo de firmware.
+Antes de cargar un nuevo firmware, TopoDroid verifica que sea compatible con la versión de hardware.
+Lamentablemente, no existe una forma segura de leer la versión de firmware del contenido del archivo;
+Para evitar cargar un archivo incorrecto, compara un bloque de firma en el archivo (el primer bloque después de los bloques del gestor de arranque) y en el suma de comprobación del archivo, contra los valores conocidos.<br><p>
+
+Los códigos de resultado de la verificación son (negativo por falla):
+<ul>
+<li>2100: firmware 2.1</li>
+<li>2200: firmware 2.2</li>
+<li>2300: firmware 2.3</li>
+<li>2400: firmware 2.4</li>
+<li>2412: firmware 2.4c</li>
+<li>2500: firmware 2.5</li>
+<li>2501: firmware 2.51</li>
+<li>2512: firmware 2.5c</li>
+<li>2610: firmware 2.6.1</li>
+<li>2630: firmware 2.6.3</li>
+<li>2640: firmware 2.6.4</li>
+<li>-200: falló en 2.1 o 2.2</li>
+<li>-230, -2300: error 2.3</li>
+<li>-240, -2400: error 2.4</li>
+<li>-250: falló en 2.5 o 2.51</li>
+<li>-246, -2412: error 2.4c</li>
+<li>-256, -2512: falló 2.5c</li>
+<li>-99: falla genérica</li>
+</ul>
+
+El DistoX2 debe iniciarse en <b>modo cargador de arranque</b>. Consulte la documentación de DistoX2 para obtener más detalles.<br>
+El dispositivo debe estar encendido en modo cargador de arranque porque
+TopoDroid lee el bloque de firma del firmware que está ya instalado en el DistoX, antes de cargar un nuevo firmware.<br>
+Si las versiones de hardware no son compatibles, aparece una advertencia.<br><p>
+<b>Tenga en cuenta que TopoDroid no advierte contra la carga de un firmware anterior a 2.5 en hardware 1.1.</b><br><p>
+
+Al cargar un firmware, TopoDroid muestra un mensaje que indica cuántos bytes se han escrito en el DistoX. Si estos son menores que el tamaño del archivo de firmware, la carga ha fallado.<br><p>
+
+<b>Procedimiento de actualización de firmware</b><br>
+<ol>
+<li>Asegúrese de que el DistoX sea el DistoX activo seleccionado en TopoDroid</li>
+<li>Abra el cuadro de diálogo de firmware (menú "Firmware") y seleccione el archivo de firmware para cargar</li>
+<li>Verifique la versión de hardware y firmware de su DistoX: asegúrese de que el láser esté apagado (CLR) y presione FUNC dos veces para mostrar la versión.
+También puede verificar las versiones de firmware y hardware de DistoX con el cuadro de diálogo de información del dispositivo TopoDroid.</li>
+<li>Apague el DistoX y enciéndalo en el modo de cargador de arranque: presione MÁS, MENOS y DIST al mismo tiempo.
+La iluminación de la pantalla se enciende, pero la pantalla permanece vacía.</li>
+<li>Sube el nuevo firmware con TopoDroid</li>
+<li>Apague el DistoX presionando CLR</li>
+<li>Encienda el DistoX y verifique la nueva versión de firmware.</li>
+</ol>
+<br><p>
+
+Si el DistoX no se enciende después de una carga de firmware, debe reiniciarlo en el cargador de arranque e intente cargar un firmware nuevamente. Para reiniciarlo en modo bootloader debes abrirlo y salte dos pines: consulte los documentos en Internet para obtener más detalles.
+<br><p>
+
+<b>Nota</b><br>
+Las actualizaciones de firmware siempre se registran en el archivo de registro de TopoDroid.<br><p>
+
+</body></html>

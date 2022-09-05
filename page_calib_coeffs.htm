@@ -1,0 +1,29 @@
+<html><body>
+
+<h4>COEFICIENTES DE CALIBRACIÓN DistoX</h4>
+
+Este diálogo muestra los 24 coeficientes de las transformaciones lineales de calibración para los vectores <b>G</b> y <b>M</b> (12 coeficientes cada uno) y 3 coeficientes de los términos no lineales (solo DistoX2 v . 2.3 o superior).<br><p>
+
+Se utiliza en tres situaciones diferentes:
+<ul>
+<li>El botón <i>Leer</i> de la <u>ventana del dispositivo</u> muestra los coeficientes leídos del DistoX.</li>
+<li>El botón <i>Leer</i> de la <u>ventana de calibración</u> muestra los coeficientes almacenados en la base de datos</li>
+<li>El botón <i>Calcular</i> de la <u>ventana de datos de calibración</u> muestra los coeficientes calculados</li>
+</ul>
+
+En el último caso, el diálogo muestra también un histograma de los errores residuales de los datos de calibración, el error promedio (y el "delta" del algoritmo original), la desviación estándar, el error máximo y el número de iteraciones tomadas por el cálculo de calibración.<br><p>
+
+El error de un dato de calibración es el ángulo entre la dirección del dato y la dirección media del grupo al que pertenece el dato, después de haber tenido en cuenta la corrección de la calibración. Los errores se informan en grados.<br><p>
+
+El histograma tiene marcas en el eje horizontal a 0,5&deg; (línea amarilla), 1,0&deg; (línea roja) y 1,5°.<br>
+En el eje vertical, las marcas de verificación son 10 y 20.<br><p>
+
+El "delta" del algoritmo original es la raíz cuadrada promedio de las diferencias residuales entre los vectores G-M calibrados y los vectores que satisfacen la condición de minimización.
+Da una estimación de la precisión de la calibración (precisión del instrumento):
+"delta" es aproximadamente 5/4 de la precisión en grados.<br><p>
+
+Este cuadro de diálogo tiene un botón para <b>escribir</b> los coeficientes del DistoX.<br>
+Se da una advertencia si la distribución de la dirección de datos está por debajo del 95 % o el error promedio de calibración está por encima de 0,5 °.
+<br><p>
+
+</body></html>

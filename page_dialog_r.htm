@@ -1,0 +1,15 @@
+<html><body>
+<h4>Diálogo de Android R</h4>
+
+A partir de Android-11, TopoDroid no puede acceder a los archivos de la forma habitual, como requisito de Google.<br>
+
+Los archivos privados de la aplicación (base de datos del dispositivo, símbolos de dibujo, archivos de firmware, etc.) se almacenan en el espacio privado de la aplicación, "Android/data/com.topodroid.TDX/files", donde otras aplicaciones no tienen acceso.<br>
+El sistema elimina esta carpeta cuando desinstala la aplicación.
+<br>
+
+La base de datos y los archivos de la topografía se almacenan en "Documentos/TDX/TopoDroid".<br>
+El sistema no elimina esta carpeta cuando desinstala la aplicación, pero <b>TopoDroid ya no podrá acceder a él si desinstala y vuelve a instalar la aplicación.</b><br>
+En ese caso, debe cambiar el nombre de "Documentos/TDX" y arrancar TopoDroid en frío para que cree es el nuevo "TDX".<br>
+
+
+</body></html>

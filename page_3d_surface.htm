@@ -1,0 +1,36 @@
+<html><body>
+<h4>VISOR 3D - DEM de superficie</h4>
+
+Se puede mostrar un DEM (modelo de elevación digital) de superficie si está incluido en el archivo del modelo (por ejemplo, en un archivo lox),
+o se ha agregado al modelo.<br><p>
+
+El botón <i>Superficie</i> de la ventana del <i>visor 3D</i> activa y desactiva la visualización del DEM.<br><p>
+
+Este cuadro de diálogo se abre desde el menú <i>Superficie</i> de la ventana <i>Visor 3D</i>.<br><p>
+Se utiliza para cargar un DEM, una textura de superficie para superponer en el DEM y ajustar su opacidad.<br>
+ 
+Contiene
+<ul>
+<li>un botón para seleccionar un archivo DEM</li>
+<li>un botón para seleccionar un archivo de textura, si el modelo tiene un DEM</li>
+<li>un control deslizante para ajustar la opacidad</li>
+<li>una casilla de verificación para activar la visualización de la proyección del modelo en el DEM</li>
+<li>una casilla de verificación para activar la visualización de la textura de la superficie (si la hay)</li>
+</ul><br>
+
+<b>Archivo DEM</b><br>
+
+El visor 3D admite archivos DEM en formato ascii o formato de cuadrícula Therion.<br><p>
+
+<b>Archivo de textura</b><br>
+
+El visor 3D admite archivos de imagen GeoTIFF de textura y archivos de mapa OSM.<br><p>
+
+Las coordenadas DEM y textura X-Y deben estar en el Sistema de Referencia de Coordenadas del modelo,
+porque el visor 3D no realiza conversiones de coordenadas.<br><p>
+
+Los archivos OSM están en coordenadas geográficas WGS84. Los valores se pueden utilizar con modelos.
+en cartografías UTM, pero la conversión es aproximada.<br><p>
+
+
+</body></html>

@@ -1,0 +1,81 @@
+
+<html><body>
+<h4>SELECCIÓN DE DISPOSITIVO</h4>
+
+TopoDroid es compatible con el siguiente dispositivo:
+<ul>
+<li>DistoX (primera versión)</li>
+<li>DistoX2 (segunda versión)</li>
+<li>Sap5 (Shetland Attack Pony), solo modelos con bluetooth</li>
+<LI>Bric4 (cartógrafo integrado reforzado con Bluetooth)</li>
+</ul>
+
+Todos los dispositivos deben estar emparejados con Android.<br><p>
+
+Normalmente, TopoDroid funciona con un solo dispositivo.
+Los datos se pueden descargar de forma continua (modo <i>continuo</i>) o por lotes (modo <i>bajo demanda</i>).
+La diferencia entre los dos modos es que el modo <i>continuo</i> permanece activo cuando la descarga de datos finaliza, o se pierde la conexión con el dispositivo, mientras que el modo <i>bajo demanda</i> está cerrado. <br><p>
+
+Sap5 y Bric4 descargan los datos solo en modo continuo.<br><p>
+
+Con TopoDroid de DistoX se puede trabajar con más de un dispositivo a la vez, aunque los datos todavía se descargan desde un solo dispositivo a la vez.<br>
+El <i>modo de descarga de datos</i> debe establecerse en <i>multi</i>.
+Cuando es así, un toque prolongado en el botón <i>descargar</i> abre un cuadro de diálogo para elegir de qué DistoX descargar los datos.<br><p>
+
+<b>Shetland Attack Pony</b><br>
+
+TopoDroid soporta el modelo de Shetland Attack Pony, versión 5 (Sap5), con bluetooth.<br>
+El dispositivo debe haber sido previamente "emparejado" con Android, utilizando la aplicación <i>Configuración</i>.
+El PIN es "000000" (seis ceros).<br>
+Posteriormente, el Sap5 aparece entre los dispositivos conocidos en la <i>Ventana de dispositivos</i>.
+Aparece como "Dirección MAC de SAP XX", donde "XX" es el código de dos letras de Sap5, por ejemplo, "HG".<br>
+Para seleccionar el Sap5 como dispositivo actual, toque su entrada en la lista.<br><p>
+
+Mientras está conectado, el Sap5 transferirá la lectura de los valores de un disparo a la aplicación, ya sea que los datos del disparo sean o no
+se almacenan o desechan en el dispositivo.<br><p>
+
+El protocolo de transmisión de datos Sap5 no incluye acuse de recibo de los datos. Por lo tanto
+<ul>
+<li>si Sap5 no está conectado, los valores de disparo <u>no se transfieren</u> a la aplicación.</li>
+<li>al volver a conectarse, el Sap5 <u>no</u> transfiere los datos de toma almacenados mientras no estaba conectado.</li>
+</ul>
+<br><p>
+
+El Sap guarda en su memoria interna los datos que han sido "almacenados".
+Estos se pueden recuperar como un archivo Survex, usando el programa Sap PonyTrainer.<br><p>
+
+La calibración del Sap5 la realiza el dispositivo y no requiere un programa externo.<br><p>
+
+<b>Bric4</b><br>
+
+TopoDroid es compatible con la versión Bric4.<br>
+El dispositivo debe haber sido previamente "emparejado" con Android, utilizando la aplicación <i>Configuración</i>.<br>
+Posteriormente, el Bric4 aparece entre los dispositivos conocidos en la <i>Ventana de dispositivos</i>.
+Aparece como "Dirección MAC del código Bric4", donde el código es el código de cuatro dígitos del Bric4, por ejemplo "0039".<br>
+Para seleccionar el Bric4 como dispositivo actual, toque su entrada en la lista.<br><p>
+
+Una vez conectado a un cliente, el Bric4 recuerda la conexión, incluso si está apagado, por lo que permanece "siempre conectado".<br>
+Cuando TopoDroid está conectado, las lecturas de toma se transfieren inmediatamente a la aplicación.
+Si TopoDroid no está conectado, los datos se guardan en la memoria y se transfieren a la aplicación cuando está próximo conectado.<br><p>
+
+El protocolo de transmisión de datos Bric4 incluye reconocimiento por parte de Android,pero <u>no</u> incluye reconocimiento de la recepción de los datos por parte de la aplicación.
+El protocolo tiene unos segundos de retraso entre la conexión y la primera transferencia de datos, y TopoDroid tiene un segundo de retraso después del último dato, para cerrar la conexión.
+Por este medio normalmente no se pierde ningún toma, aunque <u>no hay garantía</u>.
+<br><p>
+
+El Bric4 almacena los datos en la memoria interna en archivos CSV. Si está conectado a una PC a través de USB, el dispositivo aparece como memoria externa y los archivos CSV se pueden copiar a la PC.<br><p>
+
+La calibración del Bric4 la realiza el dispositivo y no requiere un programa externo.<br><p>
+
+El Bric4 se puede controlar desde la aplicación. En particular, es posible encender/apagar el láser y tomar tomas El Bric4 también tiene un "modo de exploración" en el que se toman lecturas de forma continua, aproximadamente dos por segundo.<br><p>
+
+TopoDroid puede seguir tres protocolos de datos diferentes (según una configuración en el conjunto "personalizado").
+El primero recibe solo los datos primarios (distancia, azimut y clino) que no incluyen el número de ID de datos asignado por el Bric4.
+Los otros dos reciben los datos completos. Difieren si TopoDroid utiliza el número de identificación proporcionado o asigna sus propios números.
+<br>
+Cuando se reciben los datos completos, TopoDroid registra los códigos de error y los valores de Bric4 en el comentario de disparo.
+<br><p>
+
+
+
+</body></html>

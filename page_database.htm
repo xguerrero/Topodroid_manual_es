@@ -1,0 +1,48 @@
+<html><body>
+<h4>BASES DE DATOS TopoDroid</h4>
+
+Es útil tener una idea aproximada sobre la organización de la información y los datos en las bases de datos. Las unidades de trabajo en TopoDroid son los levantamientos y las calibraciones. Un levantamiento es una sola sesión de levantamiento de un trozo de cueva. Una calibración es una única calibración DistoX.<br>
+Las topografías se almacenan en la base de datos "distox14.sqlite". Hay una base de datos de este tipo en cada carpeta de proyecto.<br>
+Las calibraciones se almacenan en la base de datos "device10.sqlite", junto con la información del dispositivo. Esta base de datos es global y se almacena en el TopoDroid carpeta privada de "archivos".<br>
+<p>
+ 
+La tabla más importante en la base de datos de la topografía es:
+<ul>
+<li><b>topografías</b>: información de topografías</li>
+</ul><br>
+Los registros de topografías almacenan el nombre de la topografía, la fecha, el equipo, la declinación magnética, el nombre de la estación inicial y posiblemente un comentario.<br>
+
+Relacionadas con las topografías están las tablas para:
+<ul>
+<li><b>Tomas</b>: datos de la topografía</li>
+<li><b>estaciones</b>: estaciones guardadas</li>
+<li><b>gráficos</b>: croquis 2D; planos, perfiles, cortes en x</li>
+<li><b>fotos</b>; imágenes asociadas a tomas de topografías</li>
+<li><b>sonidos</b>; comentarios de audio asociados a tomas de topografías</li>
+<li><b>sensores</b>: medidas asociadas a tomas de levantamiento</li>
+<li><b>fijas</b>: (estaciones geolocalizadas)</li>
+<!-- li><b>bocetos</b>: modelos 3D</li -->
+</ul><br><p>
+
+Las tablas más importantes en la base de datos del dispositivo son
+<ul>
+<li><b>dispositivos</b>: información de los dispositivos</li>
+<li><b>calibs</b>: información de calibraciones</li>
+</ul><br>
+ 
+Los registros de calibración contienen el nombre de la calibración, la fecha, el dispositivo DistoX, el algoritmo y los resultados del último cálculo: coeficientes, error promedio, error máximo, número de iteraciones.<br><p>
+
+Relacionada con las calibraciones está la tabla de datos
+<ul>
+<li><b>gms</b>: datos de calibración</li>
+</ul><br><p>
+
+Finalmente cada base de datos tiene la tabla
+<ul>
+<li><b>configs</b>: valores de configuración</li>
+</ul><br><p>
+
+Puede obtener más información sobre la organización de los datos en la base de datos mirándolos con un visor de SQLite.<br><p>
+
+</body></html>
+

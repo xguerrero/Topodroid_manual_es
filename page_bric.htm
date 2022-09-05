@@ -1,0 +1,140 @@
+<html>
+<body>
+
+<h4>GUÍA DE REFERENCIA Bric4</h4>
+
+<i>Aquí hay un resumen de las funciones de Bric4.<br>
+Los manuales de usuario oficiales están disponibles en http://www.caveexploration.org/gear/bric4</i>
+<br><p>
+
+Para encender el Bric4, presione el botón externo tres veces seguidas rápidamente.
+Para apagarlo, mantenga presionado el botón externo.
+El Bric4 se apaga solo después de 90 segundos de inactividad.
+<br><p>
+
+<b>Botones internos</b><br>
+<ul>
+<li><i>Menú</i> entra en las funciones del menú</li>
+<li><i>Arriba</i> avanza los datos en la pantalla</li>
+<li><i>Abajo</i> desplaza hacia atrás los datos en la pantalla</li>
+<li><i>Atrás</i> ...</li>
+</ul><br><p>
+
+<b>Funciones del menú</b><br>
+Al menú principal se accede pulsando el botón interno <i>Menú</i>.
+Una pulsación del botón externo sale del menú y vuelve al modo normal.
+También puede volver al modo normal presionando repetidamente el botón <i>Atrás</i>.
+<br><p>
+
+En el modo de menú, los botones internos están
+<ul>
+<li><i>Intro</i> confirma la elección</li>
+<li><i>Arriba</i> se desplaza hacia arriba entre las opciones</li>
+<li><i>Abajo</i> se desplaza hacia abajo entre las opciones</li>
+<li><i>Atrás</i> vuelve a la pantalla anterior o al modo normal</li>
+</ul><br><p>
+
+Opciones:
+<ul>
+<li><i>Dist</i>: metros o pies</li>
+<li><i>Temperatura</i>: Celsius o Fahrenheit</li>
+<li><i>Retardo de disparo</i>: entre <u>0</u> y 5 segundos</li>
+<li><i>Cambio de corriente</i>: 100 mA o <u>500</u> mA</li>
+<li><i>Err(o) sens(itividad)</i>: de 0,2&deg; a 2,8&deg; en pasos de 0,2&deg; [1.0&deg;]</li>
+</ul><br><p>
+
+Información de error: informa la información de error de las últimas diez mediciones.<br><p>
+
+Calibración:
+<ul>
+<li><i>Mostrar informe</i></li>
+<li><i>Prueba de bucle</i></li>
+<li><i>CAL quick AZM</i>: calibración rápida de azimut</li>
+<li><i>CAL completo INC y AZM</i></li>
+<li><i>Telémetro CAL</i></li>
+</ul><br><p>
+
+
+Establecer reloj (desplácese hacia abajo más allá de <i>segundo</i> para confirmar)
+<ul>
+<li><i>Año</i></li>
+<li><i>Mes</i>: del 01 al 12</li>
+<li><i>Fecha</i>: día del mes, del 00 al 31</li>
+<li><i>Hora</i>: de 00 a 23</li>
+<li><i>Minuto</i>: de 00 a 59</li>
+<li><i>Segundo</i>: de 00 a 59</li>
+</ul><br><p>
+
+Bluetooth
+<ul>
+<li><i>Nombre</i>: por ejemplo, Bric4_0039</li>
+<li><i>Dirección MAC</i>: por ejemplo, D52FDE2E98DE</li>
+<li><i>Conectado a</i>: dirección MAC del cliente</li>
+<li><i>Restablecer BLE</i></li>
+<li><i>Avanzado</i></li>
+</ul><br><p>
+
+El bluetooth avanzado tiene tres opciones
+<ul>
+<li><i>Modo RST a AT</i></li>
+<li><i>RST al modo de ejecución</i></li>
+<li><i>Comunicación actual</i>: CPU</li>
+</ul><br><p>
+
+El <i>menú BLE</i> avanzado muestra
+<ul>
+<li>el BLE transmite y recibe recuentos</li>
+<li>el estado de sincronización de datos: medidas totales y mensajes BT enviados</li>
+<li>el último comando remoto BLE</li>
+</ul><br><p>
+
+Monitor
+<ul>
+<li><i>Luz BL</i>: 0 a 5</li>
+<li><i>Color</i>: blanco, rojo, azul, verde, morado, cian</li>
+<li><i>Contraste</i>: 0 (invisible) a 30 (totalmente oscuro) [16]</li>
+</ul><br><p>
+
+Menú avanzado
+<ul>
+<li><i>Borrado de memoria</i>: restablece el índice de datos a 0 (borra la pantalla)</li>
+<li><i>Datos sin procesar del sensor</i></li>
+<li><i>Firmware CPU</i>: versiones de firmware y hardware - opción <i>Bootloader mode</i></li>
+<li><i>Firmware BLE</i>: versión de firmware - opción <i>Actualizar</i></li>
+<li><i>Reproceso de calibración completa</i></li>
+<li><i>Reproceso de calibración AZM</i></li>
+<li><i>Retroiluminación manual</i>: establecer rojo, verde, azul</li>
+<li><i>Información del cargador</i> (depuración)</li>
+</ul><br><p>
+
+La pantalla <i>Memory clear</i> muestra las mediciones totales y los mensajes enviados por BT.
+Tiene una opción para restablecer el índice de datos a 0.
+<br><p>
+
+<b>Códigos de error</b><br>
+El Bric4 informa hasta dos errores con los datos de tiro.
+El código de error se registra en los comentarios del disparo junto con el valor del error.
+No se registra nada si no hay error (código 0).
+<br><p>
+
+<ol>
+<li value="0">sin error</li>
+<li value="1">primer acelerómetro alto <u>valor</u> [normal 1]</li>
+<li value="2">segundo acelerómetro alto <u>valor</u> [normal 1]</li>
+<li value="3">primer magnetómetro alto <u>valor</u> [normal 1]</li>
+<li value="4">segundo magnetómetro alto <u>valor</u> [normal 1]</li>
+<li value="5">acelerómetros <u>disparidad</u> en un eje (1:X, 2:Y, 3:Z)</li>
+<li value="6">magnetómetros <u>disparidad</u> en un eje (1:X, 2:Y, 3:Z)</li>
+<li value="7">error de cálculo del telémetro</li>
+<li value="8">señal débil del telémetro</li>
+<li value="9">señal fuerte del telémetro</li>
+<li value="10">error de patrón de telémetro</li>
+<li value="11">respuesta del telémetro <u>tiempo de espera</u></li>
+<li value="12">telémetro <u>error</u></li>
+<li value="13">telémetro incorrecto <u>ID de mensaje</u></li>
+<li value="14">inclinación <u>disparidad</u></li>
+<li value="15">Brújula <u>disparidad</u></li>
+</ol>
+
+</body>
+</html>

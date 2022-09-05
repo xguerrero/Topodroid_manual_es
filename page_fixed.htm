@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<h4>EDICIÓN DE GEO-PUNTOS</h4>
+
+Este cuadro de diálogo se abre tocando una entrada de punto fijo en la ventana <a href="page_fixed_list.htm">Lista de geopuntos</a>.<br><p>
+
+El cuadro de diálogo muestra
+<ul>
+<li>longitud, latitud y altitud geoide. Altitud del elipsoide WGS84 entre corchetes</li>
+<li>punto <b>nombre</b> y <b>comentario</b></li>
+<li><b>declinación</b> magnética en el punto (en la fecha actual)</li>
+</ul><br><p>
+
+Botones
+<ul>
+<li><b>Ver</b> el punto en una aplicación de ubicación (siempre que tenga una instalada)</li>
+<li><b>Borrar</b> coordenadas convertidas. Esta acción es inmediata.</li>
+<li><b>Convertir</b> las coordenadas del punto geográfico a otro sistema de referencia (utilizando la aplicación Proj4)</li>
+<li><b>Eliminar</b> el registro de geopunto</li>
+</ul>
+
+Si las coordenadas del geopunto se han ingresado manualmente, se pueden editar.
+Las coordenadas tomadas con GPS o importadas de <i>MobileTopographer</i> no se pueden cambiar.<br><p>
+
+La altitud ortométrica se calcula a partir de la altitud elipsoidal utilizando el modelo de geoide EGM2008.<br><p>
+
+El botón <b>Convertir</b> calcula las coordenadas del punto geográfico en otro Sistema de Referencia de Coordenadas,
+utilizando la aplicación Proj4. La altitud del geoide se utiliza en la conversión.
+Las coordenadas convertidas se muestran y almacenan en la base de datos con el geopunto.<br><p>
+
+La declinación magnética se calcula utilizando el Modelo Magnético Mundial para 2020-2025 (esto se reemplaza con un WMM más reciente cuando se publique).
+La incertidumbre de la declinación del modelo WMM puede ser de hasta 0,4 grados en zonas templadas.<br>
+Marque la casilla <b>guardar</b> para establecer la declinación magnética en la encuesta.<br><p>
+
+El botón <b>Guardar</b> confirma los cambios en la base de datos.<br><p>
+
+
+</body>
+</html>

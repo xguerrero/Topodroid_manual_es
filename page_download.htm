@@ -1,0 +1,29 @@
+<html><body>
+
+<h4>DESCARGA DE DATOS</h4>
+
+El botón <i>Descargar</i> inicia una conexión con el dispositivo para descargar datos.
+Mientras la conexión está activa, permanece en rojo. Si está utilizando el modo de descarga <i>bajo demanda</i>, la conexión se cierra cuando no hay más datos para recuperar.
+Con el modo de descarga <i>continuo</i>, la conexión permanece abierta (y los datos se descargan continuamente tan pronto como se toman)
+hasta que el dispositivo y el Android pierdan la conexión Bluetooth. El modo que mejor se adapte a ti depende de tus hábitos.
+Con el modo <i>bajo demanda</i>, puede concentrarse en dibujar y otras tareas sin que le molesten los datos entrantes, y cuando los descarga
+puede concentrarse en ellos (están resaltados en azul). Por otro lado, la descarga <i>bajo demanda</i> requiere pausas para obtener los datos,
+y estos son especialmente largos si tomaste varias fotos en el medio.<br><p>
+
+Cuando se interrumpe la conexión Bluetooth con el dispositivo (p. ej., el dispositivo se aleja demasiado del Android o está apagado) en el modo <i>bajo demanda</i>, la descarga de datos se interrumpe.
+En modo <i>continuo</i>, TopoDroid vuelve a intentar conectarse al dispositivo cada pocos segundos.<br><p>
+
+Cuando la <u>ventana de datos</u> de la topografía se cierra, la conexión de descarga de datos finaliza. La conexión de descarga no se interrumpe cuando el la ventana está en pausa (la pantalla se apaga). Si abre un croquis mientras la conexión de descarga está activa en modo <i>continuo</i>,
+la conexión se mantiene y los datos se descargan (y se muestran en el croquis).<br><p>
+
+Para <i>Sap5</i> y <i>Bric4</i> los datos siempre se descargan en modo <i>continuo</i>.<br><p>
+
+<b>Bric4</b><br>
+
+La descarga de datos del <i>Bric4</i> se puede limitar a los valores esenciales (distancia, rumbo, inclinación y poco más), o completa, con toda la información transferida por el protocolo Bric4.<br>
+El protocolo completo incluye el "índice" de la toma. Por defecto, TopoDroid usa el índice <i>Bric4</i> como índice de datos en la tabla de la base de datos, si lo recibe. Dado que el índice de datos debe ser único, si TopoDroid recibe una toma con un índice que ya está en la base de datos, se utiliza un valor novedoso en lugar del índice <i>Bric4</i>.<br>
+Es posible deshabilitar el uso del índice <i>Bric4</i> [G], y dejar que TopoDroid asigne valores incrementales al índice de datos.<br><p>
+
+<u>ADVERTENCIA</u>. El primer disparo después de un "borrado de memoria" de Bric4 no llega a TopoDroid.<br><p>
+
+</body></html>

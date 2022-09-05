@@ -1,0 +1,53 @@
+<html><body>
+
+<h4>AMPLIAR REFERENCIA</h4>
+
+Este cuadro de diálogo se abre desde el botón circular<u>Brújula</u> en la <u>ventana de datos</u> de la topografía o en la <u>ventana de croquis</u>.<br><p>
+
+La referencia de declinación se usa para asignar la dirección de "declinación" del perfil a las tomas de la línea media.<br>
+La dirección de "declinación" no se establece automáticamente para las extensiones.<br><p>
+
+El botón <i>brújula</i> muestra una flecha larga dentro de un círculo, orientada hacia el dirección de referencia de declinación actual, o una flecha corta dirigida hacia la izquierda o hacia la derecha (para "declinación" fija).<br>
+Cuando el perfil "declinar" se calcula utilizando la "referencia de declinación", se establece a la derecha si difiere del referencia por menos de 90°. De lo contrario, se establece a la izquierda.
+<br><p>
+
+Cuando la configuración <i>Referencia de declinación fija</i> está habilitada, el botón <i>brújula</i> tiene solo dos estados, IZQUIERDO o DERECHO.
+Al tocar el botón se alterna entre ellos. La nueva declinación de tomas se establece según el estado.
+del botón.<br><p>
+
+Este diálogo tiene
+<ul>
+<li>"ampliar referencia" <b>brújula</b></li>
+<li>control deslizante para cambiar su valor entre -180 y 180&deg;</li>
+<li><b>campo de texto</b> para introducir el valor numérico del brújula, entre 0 y 360</li>
+<li><b>brújula</b> establece el valor utilizando los sensores magnéticos de Android</li>
+<li><b>izquierda</b> obliga a "declinar" a IZQUIERDA (-1)</li>
+<li><b>derecha</b> obliga a "declinar" a la DERECHA (+1)</li>
+<li><b>ok</b>: use el brújula para "declinar"</li>
+</ul>
+<br><p>
+
+<b>Modo de referencia ampliada de croquis</b><br>
+La brújula de referencia extendida también se puede cambiar en la vista en planta de un croquis [E].
+Un toque largo en el botón <i>brújula</i> cambia la ventana al modo de "ampliar referencia". En este modo un el deslizamiento del dedo por la pantalla gira el brújula de referencia (el lienzo no se desplaza).
+Para salir de este modo levanta el dedo de la pantalla.<br><p>
+
+<b>declinación de tomas</b><br>
+Cuando se descarga una nueva toma, TopoDroid establece su "declinación" automáticamente.
+Esto también se aplica a las tomas ingresadas manualmente, si la opción "declinar" en el cuadro de diálogo de toma se deja "sin configurar".
+De forma predeterminada, la "declinación" es IZQUIERDA, DERECHA o VERT (vertical), según el ángulo que haga el disparo con el brújula de referencia.<br>
+Si el ángulo es menor de 90° menos el <i>umbral vertical declinado</i> la toma se extiende a la DERECHA.
+Si es mayor de 90&deg; más el <i>declinar umbral vertical</i>, la toma se extiende a la IZQUIERDA.
+De lo contrario, se extiende VERT.<br><p>
+
+El cuadro de diálogo <i>declinar referencia</i> permite cambiar el brújula de referencia, girándolo en sentido horario o antihorario.
+Alternativamente, el brújula de referencia se puede configurar usando los sensores de brújula de Android.
+Se muestra una advertencia si la precisión del sensor es baja o si hay una falla en el sensor.
+<br><p>
+
+También es posible fijar la "declinación" para las próximas tomas a IZQUIERDA o DERECHA, seleccionando los botones apropiados en el cuadro de diálogo.<br><p>
+
+<b>declinar reproducción</b><br>
+La "declinación" de los disparos separados se determina de acuerdo con la de las tomas en la estación separada y el brújula entre la separación y las tomas.
+El splay se extiende como si se proyectara en el más cercano de los planos verticales que pasan por las tomas.<br><p>
+</body></html>

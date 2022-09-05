@@ -1,0 +1,38 @@
+<html><body>
+
+<h4>Importación/Exportación de CALIBRACIÓN DistoX</h4>
+
+<b>Importación de calibración</b><br>
+Se puede importar una calibración desde un archivo de calibración CSV.<br><p>
+
+El cuadro de diálogo de importación se abre desde el botón <i>Importar</i> en el cuadro de diálogo de lista <i>Calibración</i>.<br><p>
+
+Este cuadro de diálogo muestra la lista de archivos CSV de calibración.<br>
+Toca la entrada que quieras importar.<br><p>
+
+La importación falla si el archivo no contiene una calibración,
+o la calibración ya está presente.<br>
+También puede fallar si la dirección bluetooth del dispositivo escrita en la calibración es diferente a la del
+dispositivo actual.<br><p>
+
+<b>Exportación CSV de calibración</b><br>
+
+Una calibración DistoX se puede exportar en formato CSV (texto).<br><p>
+
+El diálogo de exportación se abre desde el menú <i>Exportar</i> de la ventana <i>información de calibración</i>.<br><p>
+
+El formato de exportación CSV de la calibración contiene los detalles de la calibración (nombre, fecha, dirección bluetooth del dispositivo, comentario, algoritmo), seguidos de los datos de calibración,
+y los coeficientes de calibración.<br><p>
+
+Cada línea de datos contiene:
+<ul>
+<li>índice de datos</li>
+<li>Valores G y M (seis enteros)</li>
+<li>grupo</li>
+<li>acimut, clino y balanceo</li>
+<li>error</li>
+<li>estado</li>
+</ul>
+<br><p>
+
+</body></html>

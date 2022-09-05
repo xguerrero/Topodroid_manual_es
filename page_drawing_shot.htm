@@ -1,0 +1,67 @@
+<html>
+<body>
+
+<h4>DIBUJO</h4>
+
+Este cuadro de diálogo se abre cuando selecciona una toma de topografía y toca el botón <u>Elemento</u> en la <u>ventana de dibujo</u> (en modo "editar").
+<br><p>
+
+Propiedades de tiro:
+<ul>
+<li>longitud, rumbo e inclinación</li>
+<li><b>estaciones</b> y tipo de disparo (D adelante, B atrás, M manual)</li>
+<li><b>comentario</b></li>
+<li>perfil <b>extendido</b>: "izquierda" (-1), "vertical" (0) o "derecha" (+1)</li>
+Barra deslizante <li>perfil <b>extensión fraccional</b> (solo tomas laterales) [T]</li>
+<li><img src="btn_duplicate.png" > indicador "duplicado"</li>
+<li><img src="btn_surface.png" > indicador de "superficie"</li>
+<li><img src="btn_comment.png" > indicador "comentado"</li>
+<li>casillas de verificación para <b>ocultar</b> la línea media (solo tomas laterales)</li>
+<li>color, si está habilitado (solo visualización)</li>
+</ul>
+<br><p>
+
+<b>Guardar</b> confirma los cambios y cierra el cuadro de diálogo.<br>
+Hay una advertencia si, al editar un plano de tramo, difiere de otro tramo entre las mismas estaciones en más de un cuarto de longitud, o 15°.<br><p>
+
+<b>Cancelar</b> y la tecla <u>Atrás</u> cierran el cuadro de diálogo sin guardar los cambios.<br><p>
+
+<b>Ocultación de la línea media</b><br>
+Las tomas de toma lateral tienen casillas de verificación para ocultar la visualización de la línea media al costado de cualquiera de las estaciones.
+Las estaciones de escondite se muestran en rojo o violeta en el dibujo. El ocultamiento se revierte a través del diálogo de edición de la estación.<br><p>
+
+<b>Extensión de toma lateral</b> [E]<br>
+En el perfil extendido, las tomas laterales generalmente se dibujan hacia la izquierda, verticalmente o hacia la derecha (o no se dibujan en absoluto).
+La elección entre estas opciones es el valor "extender", que especifica si el tramo se extiende hacia la izquierda (-1), verticalmente (0) o hacia la derecha (+1).
+Cuando se selecciona una pata en la vista de perfil ampliada, se dibuja una barra horizontal a través de su punto medio.
+deslizando desde el punto medio a lo largo de la barra, el usuario puede cambiar rápidamente la "extensión" de la toma lateral.
+<br><p>
+
+<b>Disparo fraccionario extendido</b> [T]<br>
+También es posible establecer una "extensión fraccionaria": un valor entre -1,5 y 1,5, en lugar de solo los valores enteros -1 (izquierda), 0 (vertical) y
+1 (derecha).
+Por defecto, la "extensión" tiene un valor entero y la parte fraccionaria es cero.
+El control deslizante debajo de las casillas de verificación "extender" cambia la parte entera y la parte fraccionaria de la toma "extender".<br><p>
+
+La parte fraccionaria del tiro "extender" se pone a cero cuando
+<ul>
+<li>la extensión de la toma se establece con una acción de varias tomas (excepto la acción "voltear")</li>
+<li>la extensión de la toma se cambia en la <u>ventana de dibujo</u> utilizando la línea de extensión amarilla</li>
+<li>la extensión de la toma se cambia en el cuadro de diálogo de edición de tomas (de la <u>ventana de datos</u>) de la topografía</li>
+<li>TopoDroid asigna la extensión de la toma</li>
+</ul><br><p>
+
+Para establecer una extensión fraccionaria, debe habilitar la configuración relativa.
+Como la mayoría de los programas de dibujo de mapas no admiten la "extensión" fraccionaria, esta configuración está deshabilitada de forma predeterminada.
+<br><p>
+
+<b>Color de reproducción</b> [T]<br>
+Es posible asignar un color a cada disparo splay. El color se almacena en la base de datos y, por lo tanto, se comparte entre los dibujos.<br>
+La coloración de Splay está determinada por una configuración [G]: deshabilitada o seleccionable con un selector de color o entre una paleta de colores.<br>
+El cuadro de diálogo de color también tiene un botón para borrar el color de la pantalla.
+<br><p>
+<br><p>
+
+
+</body>
+</html>

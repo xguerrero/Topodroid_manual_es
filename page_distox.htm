@@ -1,0 +1,139 @@
+<html>
+<body>
+
+<h4>GUÍA DE REFERENCIA DistoX</h4>
+
+<i>Aquí hay un resumen de las funciones de DistoX.<br>
+Los manuales de usuario oficiales están disponibles en http://paperless.bheeh.ch</i>
+<br><p>
+
+Código PIN:<br>
+Si el Distox no se empareja automáticamente usa el PIN "0000" cuatro ceros.<br><p>
+
+Códigos de error:<br>
+<ul>
+<li>252: temperatura demasiado alta</li>
+<li>253: temperatura demasiado baja</li>
+<li>255: señal demasiado débil</li>
+<li>256: señal demasiado fuerte</li>
+<li>257: demasiada luz de fondo</li>
+<li>260: rayo láser interrumpido</li>
+</ul>
+<br><p>
+
+<ul>
+<li>DIST: encender/iniciar láser/medir</li>
+<li>CLR: cancela la operación actual, apaga el láser</li>
+<li>CLR (2 segundos): apagar el dispositivo</li>
+<li>MEM: entradas de memoria</li>
+<li>REF: alternar referencia de distancia</li>
+</ul>
+<br><p>
+
+<h3>DistoX2 - X310</h3>
+
+<ul>
+<li>TEMPORIZADOR (láser encendido): temporizador de inicio (medición automática)</li>
+<li>TEMPORIZADOR (láser apagado): establezca el intervalo del temporizador (con MÁS/MENOS)</li>
+<li>SMART: información adicional sobre medidas</li>
+<li>FUNC: información del dispositivo</li>
+</ul>
+<br><p>
+
+Dos segundos:<br>
+<ul>
+<li>DIST (con láser encendido): medir</li>
+<li>CLR: apagado</li>
+<li>CLR+SMART: alternar calibre. modo</li>
+<li>CLR+MEM: borra la memoria no enviada</li>
+<li>CLR+FUNC: alternar bluetooth</li>
+<li>CLR+MINUS: apagado bloqueado</li>
+<li>REF: referencia frontal</li>
+<li>REF+FUNC: referencia anterior</li>
+<li>REF+MÁS: alternar la luz de la pantalla</li>
+<li>REF+MINUS: alternar pitido</li>
+<li>MEM: unidades de distancia</li>
+<li>MEM+SMART: unidades angulares (grados/grados)</li>
+<li>MEM+FUNC: alternar modo silencioso</li>
+<li>MEM+MINUS: alternar el modo de referencia [2.4]</li>
+<li>INTELIGENTE+MENOS: alternar verificación de disparo triple [2.4]</li>
+<li>DIST+PLUS: medición continua, CLEAR desactivado [2.6]</li>
+</ul>
+<br><p>
+
+Cinco segundos:<br>
+<ul>
+<li>FUNC+SMART: cambiar el tipo de batería</li>
+<li>FUNC+CLR+MEM: restablecimiento de fábrica</li>
+<li>DIST+MÁS+MENOS (encendido): modo cargador de arranque</li>
+</ul>
+<br><p>
+
+
+Información de medida extra:<br>
+<ol>
+<li>acimut, distancia H, distancia V, distancia</li>
+<li>enrollar, sumergir</li>
+<li>M, G</li>
+<li>aceleración a bordo. sin procesar x, y, z (*)</li>
+<li>aceleración separada. sin procesar x, y, z (*)</li>
+<li>x,y,z magnético bruto (*)</li>
+</ol>
+<br>
+
+<ol>
+<li>aceleración combinada. x,y,z</li>
+<li>magnético x,y,z</li>
+<li>aceleración a bordo. x,y,z (*)</li>
+<li>aceleración separada. x,y,z (*)</li>
+</ol>
+<br><p>
+
+Información del dispositivo:<br>
+<ol>
+<li>batería</li>
+<li>versión hw/fw, número de serie</li>
+<li>nivel de luz de la pantalla (1:10) [2.3]</li>
+<li>tono de pitido (0:5) [2.6]</li>
+<li>desplazamiento de la pieza final (-126:127) [2.3]</li>
+</ol>
+<br><p>
+
+<h3>DistoX - A3</h3>
+
+<ul>
+<li>AREA (ref. trasera): visualización continua de azimut+clino (*)</li>
+<li>AREA+REF (ref. frontal): visualización continua de roll+dip (*)</li>
+<li>ÁREA*2: versión de firmware y número de serie</li>
+<li>UNIDADES: cambiar la luz de visualización</li>
+<li>AREA*2+REF*2+CLR: alternar modo silencioso</li>
+</ul>
+(*) No tomar medidas en este modo
+<br><p>
+
+Dos segundos:<br>
+<ul>
+<li>UNIDADES (en ref. trasera): unidades de distancia</li>
+<li>UNIDADES (al frente ref.): unidades de ángulo de ciclo / BT</li>
+<li>MEM*10+UNIDADES: alternar calib. modo</li>
+</ul>
+<br>
+
+Cinco segundos:<br>
+<ul>
+<li>CLR+MÁS: alternar pitido</li>
+</ul>
+<br>
+
+Ciclo "Unidades angulares / BT"<br>
+<ul>
+<li>Brújula apagada, BT apagado</li>
+<li>brújula encendida (grados), BT apagado</li>
+<li>brújula activada (graduada), BT desactivada</li>
+<li>brújula encendida (grados), BT encendido</li>
+<li>brújula activada (graduada), BT activada</li>
+</ul>
+<br><p>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html><body>
+
+<h4>DistoX CÓMO CALIBRAR</h4>
+
+El DistoX debe calibrarse antes de su uso. La calibración es una transformación de los datos que da cuenta de la ortogonalidad no perfecta del eje de los sensores, su desalineación con la dirección del láser,
+y efectos de la electrónica sobre el campo magnético.<br><p>
+
+Para calcular los coeficientes de esta transformación, debe tomar una serie de datos de calibración "precisos"
+registrar las lecturas sin procesar de los sensores. Esto ocurre cuando el DistoX está en "modo de calibración".<br><p>
+
+Los datos de calibración deben tomarse en un lugar libre de influencias magnéticas, por ejemplo, en una cueva o en un bosque.
+Tenga cuidado con los objetos metálicos y electrónicos que puedan afectar al DistoX.<br><p>
+
+Los datos deben cubrir todas las direcciones y para cada dirección debe tomar un grupo de cuatro datos en diferentes rotaciones sobre el eje del láser.<br>
+La mejor manera es tomar 14 grupos de cuatro datos cada uno, ocho grupos en las direcciones de las esquinas de un cubo y seis en las de los centros de las caras. Los cuatro datos de cada grupo deben tomarse girando el DistoX 90°; entre uno y el siguiente. Puede tomar más de 14 grupos de datos; cuanto más, mejor.<br>
+Como mínimo, debe tomar cuatro grupos de cuatro datos (con un rollo diferente) en cuatro direcciones a 90°; en el plano horizontal,
+como si estas direcciones fueran desde el centro de un cubo hacia el centro de cuatro caras laterales.
+Los otros 40 datos no tienen que tomarse con mucho cuidado si se utiliza la política de grupo <i>PocketTopo</i>, porque se tratan como datos individuales.
+Puede tomar más datos de calibración individuales.<br><p>
+
+Los datos de calibración que formarán un grupo deben tomarse con cuidado. Los datos de grupo inexactos darán como resultado una mala calibración.
+Por lo tanto, utilice puntos fijos (p. ej., un punto en la pared o en un árbol) y alejados (unos pocos metros) para que la precisión de apuntar el láser sea mejor que la precisión de calibración deseada (2 cm a 5 m son aproximadamente 0,2 &deg;).<br><p>
+
+Después de haber tomado los datos de calibración, descárguelos con TopoDroid. No necesita esperar para tomar toda la calibración
+datos para descargarlos: cuando descargas algunos datos, estos se agregan a los que ya están en la calibración.
+Por lo tanto, si por error toma cinco datos en lugar de cuatro, descargue los datos y elimine uno de ellos en TopoDroid.<br><p>
+
+Antes de calcular la calibración, debe decirle a TopoDroid cómo se dividen los datos de calibración en grupos, es decir, cómo se asignan los grupos a los datos.
+Los grupos se denotan con números positivos. Un dato con número de grupo cero o sin grupo, no se utiliza para calcular la calibración.
+Los datos eliminados tienen el grupo -1 y normalmente no se muestran en la lista.<br><p>
+
+TopoDroid implementa dos políticas para asignar grupos automáticamente:
+<ul>
+<li><i>TopoDroid</i>: todos los datos divididos en grupos de cuatro datos. Esta es la política predeterminada</li>
+<li><i>PocketTopo</i>: cuatro grupos de cuatro datos, seguidos de datos individuales</li>
+<!-- li>"asignación de grupo de datos basada en la discrepancia de ángulo entre los datos</li -->
+</ul>
+<br>
+Los números de grupo se pueden asignar o cambiar editando los datos de calibración. Toque una entrada de datos en la lista para abrir el cuadro de diálogo de edición de datos.
+<br>
+
+Cuando se definen los grupos, puede calcular la calibración.
+Además de los coeficientes de calibración, el diálogo muestra el error promedio (y el "delta" del algoritmo original),
+la desviación estándar del error y el error máximo.
+Además, hay un histograma con la distribución de errores para los datos de calibración. Esta parcela tiene dos líneas verticales:
+una marca amarilla a 0,5&deg; y uno rojo a 1,0°<br><p>
+
+<img src="datos_calib.png" >
+<br>
+
+En resumen, para calibrar el DistoX necesita:
+<ul>
+<li>encienda el DistoX en modo de calibración</li>
+<li>tomar los datos de los datos de calibración</li>
+<li>descargar los datos a la aplicación</li>
+<li>asigne los grupos a los datos (automática o manualmente)</li>
+<li>calcule los coeficientes de calibración</li>
+<li>subir los coeficientes al DistoX</li>
+<li>revertir el DistoX al modo normal</li>
+</ul>
+<br><p>
+
+</body></html>
+

@@ -1,0 +1,42 @@
+<html><body>
+
+<h4>RECARGAR DIBUJO</h4>
+
+Esta ventana se abre con el menú <u>Recargar</u> de la <u>ventana de croquis</u>.<br><p>
+
+TopoDroid mantiene copias de seguridad de los archivos de croquis, de los cuales se puede recuperar el croquis.<br>
+TopoDroid mantiene un conjunto de copias de seguridad para cada archivo de croquis.
+Estos se nombran con los sufijos "bck", "bck0", "bck1", etc. Se almacenan en el
+Subdirectorio <i>tdr</i> (archivos de croquis binarios). Cada vez que se guarda un croquis, las copias de seguridad se rotan (por ejemplo, "bck1" pasa a llamarse "bck2", y así sucesivamente; "bck" pasa a llamarse "bck0"),
+el antiguo archivo "tdr" se renombra con el sufijo "bck", y el croquis se guarda en un nuevo archivo "tdr".
+<br><p>
+
+El croquis se guarda cada vez que se cierra o alterna entre la vista en planta y la vista de perfil, o abre una sección transversal o cambiar a otro croquis.
+<br>
+También se guarda cada vez que se modifica (por ejemplo, se agrega un nuevo elemento o se borra parte del croquis)
+mientras está abierto. Tras una modificación, se inicia un temporizador y cuando expira, se guarda el croquis.
+El tiempo de espera es una configuración (predeterminado 60 segundos).
+<br>
+El número de copias de seguridad es otra configuración.
+<br><p>
+
+La ventana <u>Copia de seguridad del croquis</u> muestra una vista previa de las copias de seguridad del croquis.
+Se muestra una copia de seguridad a la vez. Parte de la información sobre la copia de seguridad se muestra en el título:
+<ul>
+<li>hace cuánto tiempo se escribió, con sufijos para minutos (m), horas (h), días (d), meses (M) y años (Y)</li>
+<li>tamaño del archivo, entre corchetes, en bytes</li>
+<li>número de respaldo</li>
+</ul>
+<br><p>
+
+Hay dos botones para avanzar y retroceder en la lista de copias de seguridad.
+<br><p>
+
+Los menús son:
+<ul>
+<li><i>Cerrar</i> la ventana sin recargar el croquis desde una copia de seguridad</li>
+<li><i>Vuelva a cargar</i> el croquis desde la copia de seguridad mostrada (y cierre la ventana)</li>
+<li><i>Ayuda</i></li>
+</ul><br><p>
+
+</body></html>

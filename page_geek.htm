@@ -1,0 +1,111 @@
+<html>
+<body>
+
+<h4>AJUSTES PERSONALIZADOS</h4>
+
+<div style="font-size=90%">
+Las <i>configuraciones personalizadas</i> son para funciones esotéricas de TopoDroid.<br>
+Solo son accesibles en nivel de usario test.<br>
+Sin embargo, sus efectos pueden ser visibles en un nivel inferior (indicado entre corchetes).<br>
+De forma predeterminada, las banderas están deshabilitadas.
+<br><p>
+
+<b>Configuración general</b><br>
+<ul>
+<li>Conjuntos de <i>herramientas adicionales</i>: para instalar herramientas de otros conjuntos además del conjunto básico de herramientas para cuevas</li>
+<li>Borra <i>copia de seguridad del dibujo</i>: la ventana de captura tiene un menú para borrar las copias de seguridad del dibujo.</li>
+<li><i>Registro de paquetes</i>: los paquetes de datos sin procesar se copian en la base de datos empaquetada</li>
+</ul>
+<br><p>
+
+<b>Configuración de datos</b><br>
+<ul>
+<li><i>Modo de buceo</i> habilita los datos "modo de buceo": distancia, rumbo y profundidad</li>
+<li><i>Tomas recientes</i> pueden resaltarse en azul y mostrarse selectivamente</li>
+<li>Tiempo de espera de disparos recientes: el tiempo después del cual un disparo ya no es "reciente"</li>
+<li><i>Extensión fraccional</i> para tomas en el perfil extendido</li>
+<li>Cambie las estaciones por datos de <i>vista atrás DistoX</i></li>
+<li><i>Dirección y buzamiento</i> del plano de un conjunto de ensanches</li>
+<li><i>Sensores</i> medidas [A]</li>
+<li><i>Cierre de bucle</i> [E]</li>
+<li>Usando Android <i>brújula/clino</i> [A]</li>
+<li>Disparo con control remoto <i>temporizador</i> [E]</li>
+<li>Temporizador de control remoto <i>volumen</i> [E]</li>
+<li><i>Error</i> toma en la visual [T]</li>
+</ul>
+<br><p>
+
+<b>Configuración de reproducción</b><br>
+<ul>
+<li><i>Clases de splay</i>: clasificación de splays en clases (H,V,X y normal)</li>
+<li>Splay <i>colorear</i></li>
+<li>La pantalla se muestra <i>como un punto</i> en el punto final [T]</li>
+<li>Máximo <i>clino</i> de separaciones en vista en planta [80&deg;] [A]</li>
+<li><i>Modo Splay dash</i>: ninguno, por clino, por rumbo, por la vista. [ninguno]</li>
+<li><i>Umbral de clino de guión abierto</i>: las tomas separadas con inclinación por encima de este umbral son discontinuas. Esto se aplica al pasar por el clino, o en la vista en planta al pasar por la vista. También se aplica al perfil proyectado al pasar por la vista para hacer un ángulo por debajo de este umbral con la dirección de proyección [50°]</li>
+<li><i>Umbral de rumbo de guión abierto</i>: los disparos separados con rumbo fuera de más de este umbral se muestran con guiones. Esto se aplica al correr por el rumbo, o en perfil extendidocorriendo por la vista [60°]</li>
+<li><i>Umbral de ángulo de línea discontinua</i>: las tomas separadas que forman un ángulo menor que este umbral están discontinuas, en secciones X [60°]</li>
+</ul>
+<br><p>
+
+
+<b>Configuración de dibujo</b><br>
+<ul>
+<li>dibujo <i>desplazamiento y escala</i></li>
+<li>Dibujar <i>dividir/combinar</i></li>
+<li><i>Tamaño del lápiz óptico</i> [0: ignorar]: filtrar el toque del dedo al dibujar con un lápiz óptico [T]</li>
+<li>Número de <i>copias de seguridad</i> de dibujos, guardados en una lista redonda [5] [A]</li>
+<li><i>Intervalo mínimo</i> entre dos copias de seguridad [60 s] [A]</li>
+<li>Inclusión automática de secciones transversales en las exportaciones [sí]<li>
+<li><i>Estaciones guardadas</i> de color naranja en los dibujos</li>
+<li><i>Actualización solo de pierna</i> vuelve a calcular (y redibujar) la línea media solo cuando se descarga una pierna (en modo de descarga de datos continua) [no T]</li>
+<li><i>Transformación afín</i> habilite la transformación afín al dibujo</li>
+<li><i>Niveles de lienzo</i>: ninguno, por elemento, por tipo [ninguno]</li>
+</ul>
+<br><p>
+
+La actualización de <i>solo tramo</i> no afecta el modo de descarga de datos <i>bajo demanda</i>.
+Tampoco se usa a nivel de probador, porque en este nivel hay una actualización incremental experimental.<br><p>
+
+<b>Configuración de línea</b><br>
+<ul>
+<li><i>Ángulo de esquina</i> mínimo al hacer líneas rectas (cuarto botón del cuadro de diálogo de edición de elementos de línea) [45°] </li>
+<li><i>Precisión de interpolación</i> para segmentos cúbicos de Bézier [1,0]</li>
+<li><i>Umbral de esquina</i> para segmentos cúbicos Bezier [20.0]</li>
+<li>Distancia máxima de <i>punto/segmento</i> para puntos de deshierbe [0,5 m]</li>
+<li>Longitud máxima del <i>segmento</i> para deshierbe [2,0 m]</li>
+<li><i>Ajuste de línea/área</i> acciones</li>
+<li><i>Suavizar/enderezar segmento</i> acciones</li>
+<li>acción de <i>enderezamiento</i> de toda la línea</li>
+Acciones de <li><i>múltiples rutas</i></li>
+<li><i>Acciones compuestas</i></li>
+</ul>
+<br><p>
+
+<b>Configuración de pared automática</b><br>
+<ul>
+<li><i>Tipo de pared automática</i> (ninguno, convexo, Delaunay) [ninguno]</li>
+<li><i>Clino máximo</i> para extensiones de vista en planta [70°]</li>
+<li><i>Clino mínimo</i> para vistas de perfil [45&deg;]</li>
+<li><i>Separación máxima</i> de puntos de pared a lo largo del plano [0.1]</li>
+<li><i>Concavidad máxima</i> [0.1]</li>
+<li><i>Distancia</i> entre puntos en la línea de pared [1.0]</li>
+</ul>
+<br><p>
+
+<b>Configuración del dispositivo</b><br>
+<ul>
+<li><i>Retraso de conexión</i>: retraso [1/10 seg] antes de intentar conectarse al dispositivo [0, sin retraso] [B]</li>
+<li><i>Segundo dispositivo</i>: si trabajar con dos dispositivos (solo DistoX)</li>
+<li><i>Pausa de datos</i>: pausa después de la descarga de cada dato [250 ms] [A]</li>
+<li><i>Datos listos</i>: tiempo de espera para que los datos estén listos [500 ms] [A]</li>
+<li>Pausa después del <i>comando de encendido láser</i> remoto [1000 ms] [A]</li>
+<li>Pausa después del <i>comando de disparo</i> remoto [2000 ms] [A]</li>
+<li><i>Firmware</i> verificación de integridad [sí] [A]</li>
+<li><i>Modo Bric4</i>: solo datos primarios
+</ul>
+<br><p>
+</div>
+
+</body>
+</html>

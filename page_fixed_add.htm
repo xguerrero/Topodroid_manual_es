@@ -1,0 +1,44 @@
+<html>
+<body>
+
+<h4>INSERCIÓN DE GEO_POINT</h4>
+
+Este cuadro de diálogo se abre desde el botón <i>Agregar</i> en la ventana <a href="page_fixed_list.htm">iGeo-points</a>.<br><p>
+
+Este cuadro de diálogo tiene cuatro campos de texto:
+<ul>
+<li>longitud</li>
+<li>latitud</li>
+<li>altitud elipsoidal</li>
+<li>altitud ortométrica</li>
+</ul>
+
+A la izquierda de la <i>longitud</i> hay un botón para especificar si la longitud es este (positiva) o al oeste (negativo). Al tocar el botón, se alterna entre "E" y "W".<br><p>
+
+A la izquierda de la <i>latitud</i> hay un botón para especificar si la latitud es norte (positiva) o sur (negativo). Al tocar el botón, se alterna entre "N" y "S".<br><p>
+
+La longitud y la latitud se pueden ingresar como grados-minutos-segundos (dd:mm:ss.ss) o como grados decimales.
+Separadores alternativos para dos puntos son espacio, comillas simples y el símbolo de grado.
+Los separadores alternativos para el punto decimal son la coma y la barra oblicua.
+<br><p>
+
+La longitud y la latitud pueden tener un signo negativo.<br><p>
+
+Las altitudes se ingresan en metros. Cuando se especifican la longitud y la latitud, ingresando una de las dos altitudes hace que TopoDroid calcule y muestre automáticamente el otro.<br><p>
+
+Botones:
+<ul>
+<li><b>Portapapeles</b>: las coordenadas guardadas en el portapapeles como "lat,long[,alt]" se copian del portapapeles al respectivos campos de texto. Con este botón puede usar la aplicación <i>GPS-Impetus</i> para obtener las coordenadas (la altitud debe ser introducido manualmente).</li>
+<li><b>Ver</b> invoca una aplicación de mapas (siempre que tenga una instalada) para mostrar el punto.</li>
+<li>con <b>Proj4</b> puede ingresar las coordenadas en otro Sistema de Referencia de Coordenadas. La aplicación <i>Proj4</i>
+se invoca, y debe seleccionar el CRS e ingresar las coordenadas en el lado izquierdo: longitud/Este, latitud/Norte y altitud del geoide.
+Las unidades de altitud y coordenadas cartográficas son metros.
+Las unidades de coordenadas geográficas pueden ser grados decimales o grados-minutos-segundos.
+A continuación, toca la flecha de conversión y las coordenadas se convierten a WGS84 geográficas y se envían de vuelta a TopoDroid.</li>
+<li><b>Guardar</b> guarda un registro con los datos de la estación fija en la base de datos.</li>
+</ul>
+<br><p>
+
+</body>
+</html>
+
