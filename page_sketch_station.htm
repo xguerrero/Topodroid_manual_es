@@ -1,0 +1,81 @@
+<html><body>
+
+<h4>SKETCH STATION</h4>
+
+This dialog displays the station position, East, North, and Z (upwards) relative to the sketch origin, and 
+the station comment (editable field) [T].
+<br>
+
+Actions:
+<ul>
+<li>enter or edit the station comment and save it [T]</li>
+<li>make the station "active", ie, continue the survey from this station.</li>
+<li>show the hidden midline (if applicable)</li>
+<li>force showing/hiding the display of the splay shots at the station</li>
+<li>at-station x-section buttons</li>
+<li>go to the <a href="page_saved_station.htm">saved-station</a> dialog [A]</li>
+</ul>
+
+<b>Active station</b><br>
+The "active" station is where the next downloaded shots will be attached. When a leg is downloaded (or inserted) the new station becomes the "active" station. By changing the "active" station you can continue surveying from a station in the middle of the survey. The active station is shown green in the shot data list.<br><p>
+
+<b>Midline hiding</b><br>
+Hiding parts of the midline is useful when the survey is complicated or goes over itself.
+In this case it is useful to see only the relevant portion of the midline, by hiding what lies beyond a station.
+If the midline beyond a station is hidden, the station is highlighted:
+violet if the hidden midline lies between them and the sketch origin station, red otherwise.
+Stations in the part of midline behind a "red" station, are not automatically saved as Therion station points. Therefore, by choosing the sketch origin station inside the scrap and marking stations as barrier you can avoid spurious stations in the scrap file.
+<br>
+The display of the midline can be limited through the property edit dialog of leg shots.
+When the midline beyond the station is hidden, there is a button to revert and show it in the station edit dialog.<br><p>
+
+<img src="hiding_stations.png" alt="hiding stations"><br><p>
+
+<b>Station splays</b><br>
+The display of the station splays can be forced to override the global setting of the sketch.
+If showing is forced, the splays are shown even when they are hidden globally.
+If hiding is forced, the splays are not shown even when they are displayed globally.<br>
+This flag does NOT affect the edit-selection of splays; the selection green dots are always displayed
+according to the global setting.<br><p>
+
+<b>At-station x-section</b><br>
+X-sections can be created at stations.
+In plan view they are in the vertical plane (their plane is determined by the azimuth).
+In profile view, x-section can have an inclination. However when selected through the "stations" checkboxes
+they are vertical if the legs inclination is below a specified value (a setting), otherwise they are
+horizontal.
+<br>
+
+If the station has only two legs attached the plane of the x-section can be inferred by TopoDroid
+(the bisecant of the angle between the two legs, or perpendicular to the leg of there is only one).
+There remains only the ambiguity about from which side
+of the plane the x-section is looked at. This is resolved providing two buttons that specify the direction of 
+view with a pair of stations.
+<br>
+
+With the last button the user can pick the x-section direction pointing with the <a href="page_photo_dialog.htm">TopoDroid camera</a>.
+<br><p>
+
+At-station x-sections can be "private" to the sketch in which they have been defined or shared
+among all the sketches. In the latter case, in all the sketches the edit dialog of the station opens
+the same x-section. In the former case, an at-station x-section is re-opened only thru
+the station edit dialog in the sketch where it has been defined.<br><p>
+
+In either case the x-section is exported only in the sketch that contains the section point,
+ie, in the sketch where is has been defined.<br><p>
+
+The choice between "private" and "shared" at-station x-sections is made when the survey is created
+and cannot be modified afterward. When at-station x-sections are private, you may enter a nickname to
+distinguish x-sections at the same station in different sketches.
+<br><p>
+
+The name of an at-station x-section in the plan view is composed of the "survey_name", "xs", the "station_name"
+and, if the x-sections are private, the "sketch_name". For example, "survey-xs-0-1p".
+The name of an at-station x-section in the profile view has "xh" instead of "xs".
+<br><p>
+
+The at-station x-sections can have a comment, just like the section-line x-sections.<br><p>
+
+
+
+</body></html>

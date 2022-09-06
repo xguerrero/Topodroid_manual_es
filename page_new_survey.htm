@@ -1,0 +1,68 @@
+<html><body>
+
+<h4>NUEVA topografía</h4>
+
+Este cuadro de diálogo se abre desde el botón <i>Agregar</i> en la <u>ventana principal</u>.<br><p>
+
+Información para la nueva topografía:
+<ul>
+<li><i>nombre</i></li>
+<li><i>fecha</i></li>
+<li><i>equipo</i></li>
+<li><i>estación inicial</i></li>
+<li><i>declinación magnética</i></li>
+<li>topografía <i>descripción</i></li>
+<li>en la estación <i>secciones transversales</i>, compartidas o privadas</li>
+<li>bucear <i>modo-datos</i> [T]</li>
+</ul>
+<br><p>
+
+El <i>nombre</i> es obligatorio.
+Los nombres de las topografías se utilizan para enumerar las topografías en el
+<u>ventana principal</u> y TopoDroid distinguen las topografías por su nombre (aunque cada topografía tiene una identificación numérica única en la base de datos).<br>
+El nombre debe ser único en la base de datos. Los nombres que difieren solo por las mayúsculas y minúsculas de los caracteres no son diferentes porque el sistema de archivos no distingue entre mayúsculas y minúsculas. TopoDroid genera una advertencia si el nombre de la nueva topografía coincide con el nombre de una topografía existente
+excepto por el caso de los personajes.<br><p>
+
+<b>ADVERTENCIA</b>.
+El nombre de la topografía no puede contener espacios, ni los caracteres '/' (barra, que es el separador del nombre de la ruta), ':' (dos puntos), '*' (estrella) y '\' (barra invertida).
+Se eliminan las barras diagonales inversas. Los espacios se reemplazan con '_' (guión bajo), las barras y los dos puntos con guiones '-' y las estrellas con '+' (más).<br><p>
+
+
+La <i>fecha</i> se escribe con formato "yyyy.mm.dd". Por ejemplo, el 6 de enero de 2015 es "2015.01.06". Está preestablecido a la fecha actual.<br><p>
+
+El <i>equipo</i> es obligatorio y no puede dejarse vacío.<br><p>
+
+La <i>descripción</i> está vacía. Se puede dejar así con seguridad, aunque es una buena práctica tomarse el tiempo para escribir una descripción de la topografía.<br><p>
+
+La <i>declinación magnética</i> está "desestablecida" por defecto. Si lo sabe, puede ingresarlo aquí, de lo contrario, puede buscarlo en la web después de haber encontrado las coordenadas de un punto fijo (por ejemplo, la entrada de la cueva) con el GPS [A].
+La declinación debe ingresarse en grados decimales.
+El rango de valores aceptado es [-360°, 360°].
+Cualquier valor fuera de este intervalo se considera "no establecido".<br><p>
+
+Las <i>secciones en X</i> en la estación se pueden compartir entre los croquis topográficos o ser privadas para cada croquis.
+Esta elección se debe hacer cuando se crea la topografía y no se puede modificar más tarde porque
+afecta a los bocetos existentes.<br><p>
+
+<b>Botones</b><br>
+<i>Guardar</i>: el nuevo nombre de la topografía se agrega a la base de datos.<br>
+<i>Abrir</i>: guarda e inicia la actividad <i>Lista de tomas</i> inmediatamente.<br><p>
+
+<b>Modo de datos de buceo</b><br>
+El modo de datos de buceo es una función experimental.
+Los datos solo se pueden ingresar manualmente y en el siguiente formato:
+<ul>
+<li>DESDE la estación</li>
+<li>A la estación</li>
+<li>profundidad en la estación FROM</li>
+<li>rumbo de la dirección DESDE-HACIA</li>
+<li>distancia entre la estación FROM y TO</li>
+<li>LRUD en la estación FROM (opcional)</li>
+</ul>
+<br><p>
+
+Los datos de backshot no son compatibles con el modo de datos de "buceo".
+<br><p>
+
+
+
+</body></html>

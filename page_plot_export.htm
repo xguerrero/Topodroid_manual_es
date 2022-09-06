@@ -1,0 +1,55 @@
+<html>
+<body>
+
+<h4>EXPORTACIONES DE dibujos</h4>
+
+Los dibujos se almacenan en formato binario TopoDroid y se pueden exportar como
+<ul>
+<li><i>Therion</i> archivo ".th2"</li>
+<li><i>cEncuesta</i> archivo ".csx"</li>
+<li><i>Túnel</i> Archivo ".xml"</li>
+<li>DXF 2D (<i>LibreCAD</i>)</li>
+<li>SVG (<i>Inkscape</i>)</li>
+<li>PDF</li>
+<li>archivo de forma (<i>QGIS</i>)</li>
+<li><i>xtherion</i> imagen ".xvi"</li>
+<!-- li>Archivo de imagen PNG</li -->
+</ul><br><p>
+
+
+Además de la exportación, hay una opción para guardar automáticamente un dibujo en uno de los formatos de exportación admitidos cada vez que se cierra.<br><p>
+
+El archivo de exportación <b>cSurvey</b> contiene tanto el plano como los croquis del perfil. Si los puntos de "sección" están definidos, también tiene las secciones x.
+Las secciones X no se exportan como archivos cSurvey.<br><p>
+
+<!--
+La resolución de las imágenes <b>PNG</b> es una configuración ajustable. Sin embargo, una imagen más grande y detallada requiere más tiempo de CPU y puede fallar debido a los límites de memoria. Si falla, TopoDroid intenta reducir la resolución hasta que logra exportar el dibujo como archivo de imagen PNG.<br><p -->
+
+Los dibujos se pueden exportar como archivos 2D <b>DXF</b>. Las versiones de DXF admitidas son 9, 12 y 14.<br><p>
+
+La exportación de <b>shapefile</b> incluye estaciones, tomas y dibujos. Todos los objetos de dibujo se convierten en cadenas lineales.
+Las tablas de atributos contienen los datos del objeto (por ejemplo, tipo de punto, orientación, etc.).
+Los archivos que comprenden una exportación de shapefile se comprimen en un archivo zip.
+<br><p>
+
+Algunas configuraciones de exportación, específicas del formato seleccionado, se pueden anular en el cuadro de diálogo de exportación.<br><p>
+
+<b>Exportación de resumen</b><br>
+Los dibujos también se pueden exportar desde la "Ventana de descripción general" en los siguientes formatos
+<ul>
+<li><i>Therion</i> archivo ".th2"</li>
+<li>DXF 2D (<i>LibreCAD</i>)</li>
+<li>SVG</li>
+<li>archivo de forma (<i>QGIS</i>)</li>
+<li>PDF</li>
+Archivo <li>".xvi" (<i>xtherion</i>)</li>
+</ul>
+<br><p>
+
+La exportación de la <u>ventana de vista general</u> incluye todos los dibujos de la vista actual (ya sea planta o perfil).<br>
+Si hay puntos de "sección", también se incluyen las secciones en X.
+<br><p>
+
+
+</body>
+</html>

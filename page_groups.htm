@@ -1,0 +1,34 @@
+<html><body>
+
+<h4>GRUPOS DE DATOS DE CALIBRACIÓN DistoX</h4>
+
+Este cuadro de diálogo se abre desde el botón <i>Grupo</i> de la <u>ventana de datos de calibración</u>.<br><p>
+
+Antes de calcular los coeficientes de calibración, los datos de calibración deben subdividirse en grupos de datos que tengan el mismo rumbo e inclinación (pero diferente balanceo).<br>
+Tenga en cuenta que una asignación de grupo incorrecta puede resultar en una falla al calcular los coeficientes de calibración (generalmente debido a demasiadas iteraciones en el algoritmo).<br><p>
+
+Los grupos se identifican con un número entero que comienza con 1.<br>
+Se enumeran los datos con el número 0, pero se excluyen del cálculo de los coeficientes.<br>
+Los datos eliminados tienen un número de grupo negativo, por lo tanto, establecer el número de grupo -1 equivale a marcar los datos como "eliminados".<br><p>
+
+Puede asignar el número de grupo a cada dato de calibración a mano (con el cuadro de diálogo <i>Editar datos de calibración</i>),o deja que TopoDroid asigne los números de grupo por ti.
+<br><p>
+
+Existen dos políticas de asignación automática de grupos:
+<ol>
+<li><i>TopoDroid</i>: cuatro datos a la vez para cada grupo;</li>
+<li><i>PocketTopo</i>: cuatro a la vez para los primeros 16 datos (cuatro grupos), luego cada dato es un grupo por sí mismo;</li>
+<!-- li>grupos basados ​​en la distancia angular relativa (diferencia de dirección).</li -->
+</ol>
+<br>
+Las dos políticas dan calibraciones equivalentes, pero con la política <i>TopoDroid</i>, la aplicación puede calcular la desviación de los datos calibrados de los valores esperados, en más datos y crear un histograma más poblado de errores residuales.
+<br><p>
+
+Comportamiento:
+<ul>
+<li><i>Restablecer grupos</i>: todos los grupos de datos se restablecen</li>
+<li><i>OK</i>: se asignan grupos (solo a datos no eliminados sin grupo)</li>
+</ul>
+<br><p>
+
+</body></html>

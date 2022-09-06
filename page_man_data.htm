@@ -1,0 +1,57 @@
+<html><body>
+
+<h4>ENTRADA DE DATOS MANUAL</h4>
+
+Si no tiene un dispositivo bluetooth, tambien puede ingresar los datos de disparo manualmente.
+El botón <i>Agregar</i> abre el cuadro de diálogo para la entrada de datos de tomas.
+Debe ingresar los nombres de las estaciones y los datos de disparo (longitud, rumbo y clino).
+El botón <i>reverse</i> cambia las estaciones, es decir, invierte la toma.<br><p>
+
+Si solo se completan los campos hacia atrás (los campos hacia adelante se dejan vacíos)
+el toma se ingresa con los datos hacia atrás.<br><p>
+
+Para agregar una toma separada, ingrese "." (punto) o "-" (guión) en la estación TO.
+Se puede agregar LRUD a una toma separada, proporcionando así tomas separadas adicionales.
+En este caso, los LRUD se refieren a la estación DESDE.<br><p>
+
+Hay una advertencia si, al editar un plano de tramo, difiere de otro tramo entre las mismas estaciones en más de un cuarto de longitud, o 15°.<br><p>
+
+Botones:
+<ul>
+<li><b>Guardar</b> inserta la toma en la encuesta y actualiza los nombres de las estaciones incrementándolos para que el cuadro de diálogo está listo para ingresar el siguiente disparo</li>
+<li><b>Aceptar</b> inserta la toma en la encuesta y cierra el cuadro de diálogo.</li>
+</ul><br><p>
+
+<b>Uso de Android para la dirección</b><br>
+El rumbo y el clino se pueden configurar con los sensores de Android [G]:<br>
+<img src="btn_compass.png" > el eje de referencia es la dirección del lado largo del dispositivo.
+Un temporizador (10 s por defecto) le permite apuntar el dispositivo antes de medir.<br>
+<img src="btn_photo.png" > el eje de referencia es el normal a la pantalla:
+Mire la estación TO en la pantalla e inicie el temporizador cuando la estación esté en el
+medio de la cruz.<br>
+Se muestra una advertencia si la precisión del sensor es baja o si hay una falla en el sensor.<br><p>
+
+<b>LRUD</b><br>
+Si se especifican LRUD, también se insertan las tomas separadas respectivas.
+Además, puede seleccionar si se refieren a la estación DESDE (predeterminado) o a la estación TO.<br><p>
+
+Si el clino de toma es más pequeño que la configuración <i>v-threshold</i>, los LRUD están en un plano vertical:
+U es hacia arriba, D hacia abajo, L horizontal a la izquierda del disparo (es decir, con el azimut del disparo menos 90°),
+y R horizontal a la derecha del plano.<br><p>
+
+Si el clino de toma es mayor que la configuración <i>v-threshold</i>, los LRUD están en un plano horizontal:
+L es oeste, R es este, U es norte y D es sur.<br><p>
+
+<b>Unidades</b><br>
+Los datos deben ser ingresados ​​en las unidades actuales.
+Por ejemplo, si las unidades de longitud son "pies", las distancias deben ingresarse en "pies".<br><p>
+
+<div style="font-size=90%">
+<b>Modo de buceo</b><br>
+En el modo de buceo, los datos del disparo son la profundidad, el rumbo y la distancia.
+Se supone que el rumbo se toma con una brújula normal, con una graduación que aumenta en el sentido de las agujas del reloj.
+Las entradas de rumbo se convierten como si se hubieran tomado con una brújula espeleológica (geológica).
+Por ejemplo, una entrada de 340&deg; se convierte a 20°.
+</div><br><p>
+
+</body></html>

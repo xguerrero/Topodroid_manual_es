@@ -1,0 +1,62 @@
+<html>
+<body>
+
+<h3>NUEVO croquis</h3>
+
+Este cuadro de diálogo se abre desde el botón <i>Nuevo croquis</i> en el cuadro de diálogo <i>Lista de croquis</i>.<br><p>
+
+Tiene dos campos de texto y un botón de confirmación.
+<ul>
+<li><b>nombre</b> es el nombre asignado al croquis.</li>
+<li><b>estación de referencia</b></li>
+<!-- li><b>modo horizontal</b> [T] [no predeterminado]</li -->
+Casilla de verificación de vista de perfil <li><b>extendida/proyectada</b></li>
+<li><b>azimut de proyección</b>, para vista de perfil proyectada</li>
+<li><b>croquis colgante</b> (el origen no está unido a la línea media)</li>
+</ul><br><p>
+
+Puede usar el <b>nombre</b> sugerido por TopoDroid
+(un número entero creciente) o ingrese un nombre mnemotécnico. Cada croquis se guarda con dos archivos, uno para el plano, el otro para el perfil. Los nombres de los archivos se obtienen componiendo el nombre del levantamiento, el nombre del croquis y un sufijo ("p" para plano, "s" para perfil). Por ejemplo, el croquis "2" de la encuesta "cueva" se guarda en los dos archivos
+"cueva-2p.tdr" y "cueva-2s.tdr".<br><p>
+
+TopoDroid dará una advertencia si el nombre coincide con el nombre de un croquis existente.
+En particular, no es posible tener dos croquis con nombres que difieran solo por el caso de los personajes.
+ya que los dos croquis tendrían el mismo archivo porque el sistema de archivos no distingue entre mayúsculas y minúsculas.<br><p>
+
+<b>ADVERTENCIA</b>.
+El nombre del croquis no puede contener el carácter '/' (barra inclinada), que es el separador del nombre de la ruta.
+Las barras se reemplazan con guiones '-'.<br><p>
+
+<b>Estación de referencia</b><br>
+La estación de referencia (origen) define cómo se traslada el croquis con respecto a la línea media del levantamiento.
+La línea media del levantamiento define la escala del croquis (el dibujo tiene una escala de 40 unidades de lienzo por metro) y la rotación, pero deja sin definir
+cómo se traslada el dibujo con respecto a la línea media. Esta incertidumbre se resuelve especificando el
+la estación de referencia debe estar en (0,0) en el marco de referencia del lienzo del croquis.<br><p>
+
+La estación de referencia también determina la <b>reducción de datos</b> de la línea media del levantamiento para el croquis.
+Desde el punto de vista del croquis, la línea media se construye a partir de la estación de referencia y continúa
+siempre que se puedan adjuntar datos. La línea media resultante
+forma un árbol, enraizado en la estación de referencia. Para que el lienzo esté menos abarrotado,
+es posible ocultar la visualización de una parte de la línea media, ya sea
+después de una estación, o antes de ella (es decir, entre la estación de referencia y la estación).
+Esto se explica en el cuadro de diálogo "Esbozar estación".<br><p>
+
+Si el levantamiento tiene un "origen de estación fija", TopoDroid rellena previamente la "estación de referencia" con la primera estación de levantamiento.
+De lo contrario, utiliza la última estación o la estación activa si está configurada.
+Puede cambiarlo si desea otra estación como referencia de croquis.<br><p>
+
+La aplicación señala un error si la estación de referencia no existe en los datos del levantamiento.
+Se puede obligar a usar una estación inexistente marcando la casilla de verificación "colgando".<br>
+En este caso el croquis no tendrá referencia de línea media, ni ensanchamientos ni estaciones,
+hasta que la estación de referencia se asigne a un tramo.<br><p>
+
+Si la casilla de verificación <b>extendido</b> está marcada, el perfil del croquis se extiende y no se muestra el <b>acimut de proyección</b>.
+De lo contrario, el perfil del croquis se proyecta con la dirección de la vista del acimut de proyección.<br><p>
+
+<div style="font-size=90%">
+En el modo <b>apaisado</b> el Norte y la vertical se encuentran hacia el lado izquierdo de la pantalla, en vistas de planta y de perfil, respectivamente.
+Asimismo, las secciones en x tienen la vertical hacia el lado izquierdo.
+</div><br><p>
+
+</body>
+</html>

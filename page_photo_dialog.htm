@@ -1,0 +1,68 @@
+<html>
+<body>
+
+<h4>FOTOGRAFÍA/DIBUJO</h4>
+
+<div style="font-size=90%">
+Este cuadro de diálogo se abre desde el botón <i>Foto</i> en el cuadro de diálogo secundario <i>Edición de tomas</i>, o cuando un punto de "foto"
+o se inserta una sección de fotos
+en la <u>ventana de croquis</u>.<br><p>
+
+Hay un campo de texto para el <b>comentario</b> a la foto que vas a tomar y una casilla de verificación para la elección de la implementación de la cámara.<br><p>
+
+Botones:
+<ul>
+<li><b>Aceptar</b> cierra el cuadro de diálogo y comienza a tomar una foto.</li>
+<li><b>Cancelar</b> cierra el cuadro de diálogo.</li>
+</ul><br><p>
+
+La cámara TopoDroid es una implementación simple de una cámara.
+Su característica única es que almacena el acimut y la inclinación del dispositivo en etiquetas exif en el archivo de imagen.
+El rumbo se almacena como GPS_LONGITUD y la inclinación como GPS_LATITUD (con signo).
+<br>
+TopoDroid establece las siguientes etiquetas exif:
+<ul>
+<li><i>Software</i>: "TopoDroid" y su versión, separados por un espacio [Android 7 y superior]</li>
+<li><i>Orientación</i></li>
+<li><i>Hora de datos</i> [aaaa.MM.dd]</li>
+<li><i>Latitud GPS</i>: inclinación [1/100&deg;]</li>
+<li><i>Referencia de latitud GPS</i>: "N" o "S"</li>
+<li><i>Longitud GPS</i>: acimut [1/100&deg;]</li>
+<li><i>Referencia de longitud GPS</i>: "E"</li>
+<li><i>Descripción de la imagen</i>: acimut e inclinación en 1/100°, separados por un espacio</li>
+</ul>
+<br><p>
+
+Para el punto de "foto" o la sección transversal de la foto, la pantalla de la cámara TopoDroid tiene una cruz superpuesta centrada.<br><p>
+
+TopoDroid utiliza sensores de Android para obtener la dirección (rumbo y clino).
+Se muestra una advertencia si la precisión del sensor es baja o si hay una falla en el sensor.<br><p>
+
+La cámara TopoDroid tiene tres botones en la parte inferior derecha.
+<ul>
+<li><b>cámara</b>. Rojo: listo, toque para tomar una foto. Azul: en espera, toque para activar la cámara.</li>
+<li><b>guardar</b> guarda la imagen. En gris hasta que se haya tomado una foto.</li>
+<li><b>atrás</b> cierra la ventana sin guardar la imagen.</li>
+</ul>
+
+Con la pantalla arriba la imagen es vertical.
+Cuando la pantalla se gira hacia la izquierda o hacia la derecha, la imagen es horizontal.<br><p>
+
+Los botones de zoom se activan al tocar la pantalla en la mitad inferior.
+Para pasar por grandes pasos de zoom, toque los botones de zoom repetidamente rápido.<br><p>
+
+<b>Implementación de cámara</b><br>
+TopoDroid tiene dos implementaciones de cámara: la primera usa la antigua API de cámara de Android,
+el segundo utiliza la nueva API camera2 de Android.<br>
+El valor predeterminado es la cámara antigua.<br><p>
+
+Con la nueva API camera2 hay un límite de cinco intentos de captura de imágenes,
+después de lo cual el botón <i>cámara</i> ya no estará disponible.<br><p>
+
+Se muestra una advertencia si falla el guardado de la imagen JPEG.<br><p>
+
+</div><br><p>
+
+</body>
+</html>
+

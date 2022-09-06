@@ -1,0 +1,45 @@
+<html><body>
+
+<h4>MEMORIA DistoX</h4>
+
+Este cuadro de diálogo se abre desde el botón <i>Memoria</i> de la <u>ventana del dispositivo</u>.<br><p>
+
+<b>Volcado de memoria</b><br><p>
+
+El botón <i>Dump</i> lee el contenido de la memoria DistoX.
+Leer la memoria del DistoX directamente es un proceso lento, y el DistoX debe mantenerse "ENCENDIDO" mientras lo hace.
+Es recomendable leer una pequeña porción de la memoria, digamos 20 entradas, a la vez:
+ingrese el índice de memoria de datos inicial y final en los dos campos de texto a la derecha.
+Los datos se leen desde el índice inicial hasta uno antes del índice final.
+Para DistoX2, los índices de memoria van desde 0 incluido hasta 1064 excluido.<br>
+Para la versión 1 de DistoX, la memoria varía de 0 incluida a 4096 excluida.<br>
+<p>
+
+Si ha introducido un nombre de archivo, el volcado de memoria también se guarda en un archivo (en la carpeta "dump").<br><p>
+
+El resultado del volcado de memoria se muestra en una lista en la parte inferior del cuadro de diálogo.
+Cada línea contiene
+<ul>
+<li>la ubicación de la memoria</li>
+<li>un código de letras: tiro de frente ('d'), punto de referencia ('b'), datos de calibración ('g' o 'm')</li>
+<li>los valores de la memoria.</li>
+</ul>
+<br><p>
+
+El código de letras mayúsculas indica datos que aún no se han descargado.<br>
+Las tomas se muestran como longitud (metros), rumbo y clino (grados).<br>
+Los datos de "precisión" del DistoX2 no se muestran.<br>
+Para los datos de calibración, se muestran los valores brutos. Los datos 'm' no se muestran para el DistoX2.<br>
+Las entradas sin un tipo reconocido se marcan con un código de signo de interrogación ('?').<br><p>
+
+<!-- ¿algo especial para XBLE? -->
+
+
+<b>Solo para DistoX A3</b><br>
+<ul>
+<li><b>Leer</b> los cursores de memoria</li>
+<li><b>Almacenar</b> los cursores de memoria</li>
+<li><b>Restablecer</b> una parte de la memoria, es decir, marcarla como "para ser descargada"</li>
+</ul>
+
+</body></html>
