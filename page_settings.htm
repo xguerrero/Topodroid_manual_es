@@ -1,336 +1,150 @@
 <html><body>
-<h4>TopoDroid SETTINGS</h4>
+<h4>AJUSTES de TopoDroid</h4>
 
-<b>General Settings</b><br>
+<b>Configuración general</b><br>
 <ul>
-<li><a href="page_cwd.htm">Work directory.</a> Default "unset" (ie "TopoDroid")</li>
-<li>Text size: size of the text in lists. &gt;= 1. [14]</li>
-<li>Buttons size {small, normal, medium, large, huge}. [normal]</li>
-<li>Activity level {basic, normal, advanced, expert}. [normal]</li>
-<li>Keyboard. Enable <a href="page_keypad.htm">custom keyboards</a> instead of Android default keyboard.</li>
-<li>Custom keyboard cursor</li>
-<!-- li>Cosurveying service. Default OFF</li -->
-<li>User manual translation</li>
-<li>App <a href="page_language.htm">language</a> {default,bg,cn,de,fr,en,es,hu,it,pg,pl,ro,ru,sk}. Default "default" (i.e. locale)</li>
-<li>Screen orientation (unspecified, portrait, landscape) [unspecifed]</li>
-<li>Settings export to, and import from file "settings.txt" in the TopoDroid folder.</li>
+<li><a href="page_cwd.htm">Directorio de trabajo.</a> "Desactivado" predeterminado (es decir, "TopoDroid")</li>
+<li>Tamaño del texto: tamaño del texto en las listas. &gt;= 1. [14]</li>
+<li>Tamaño de los botones {pequeño, normal, mediano, grande, enorme}. [normal]</li>
+<li>Nivel de actividad {básico, normal, avanzado, experto}. [normal]</li>
+<li>Teclado. Habilite <a href="page_keypad.htm">teclados personalizados</a> en lugar del teclado predeterminado de Android.</li>
+<li>Cursor de teclado personalizado</li>
+<!-- li>Servicio de cotopografía. DESACTIVADO por defecto</li -->
+<li>Traducción del manual del usuario</li>
+<li>Aplicación <a href="page_language.htm">idioma</a> {predeterminado,bg,cn,de,fr,en,es,hu,it,pg,pl,ro,ru,sk}. Predeterminado "predeterminado" (es decir, configuración regional)</li>
+<li>Orientación de la pantalla (sin especificar, vertical, horizontal) [sin especificar]</li>
+<li>La configuración se exporta e importa desde el archivo "settings.txt" en la carpeta TopoDroid.</li>
 </ul>
 
 <div style="font-size:90%">
 <ul>
-<li>Custom settings:<br>
+<li>Configuración personalizada:<br>
   <ul>
-  <li>Additional palettes menu</li>
-  <li>Backup clear menu</li>
-  <li>Packets logging</li>
+  <li>Menú de paletas adicionales</li>
+  <li>Menú de borrado de copia de seguridad</li>
+  <li>Registro de paquetes</li>
   </ul>
 </li>
 </ul>
 </div><br><p>
 
-<b>Import and export of settings</b><br>
-Settings can be exported to the file "settings.txt" (in TopoDroid folder).
-This is a text file listing the values of all the settings.<br>
-Settings can be imported from the same file. It is possible to choose whether
-to import all the settings or only the functional ones.<br>
-If there is a problem parsing the file, the settings are not changed.<br>
-Some interface settings (like the buttons size) need to restart the app to 
-become effective.<br><p>
+<b>Importación y exportación de configuraciones</b><br>
+La configuración se puede exportar al archivo "settings.txt" (en la carpeta TopoDroid).
+Este es un archivo de texto que enumera los valores de todas las configuraciones.<br>
+Los ajustes se pueden importar desde el mismo archivo. Es posible elegir si
+para importar todas las configuraciones o solo las funcionales.<br>
+Si hay un problema al analizar el archivo, la configuración no cambia.<br>
+Algunas configuraciones de la interfaz (como el tamaño de los botones) necesitan reiniciar la aplicación para entrar en vigor.<br><p>
 
-<b>Import/Export</b><br>
+<b>Importar/Exportar</b><br>
 <ul>
 <li>General:<br>
   <ul>
-  <li>Default data export type {cave,cav,csv,csx,dat,dxf,grt,gtx,srv,sur,svg,svx,th,top,tro} [none]</li>
-  <li>Default sketch export type {none,th,csx,dxf,svg,xvi} [none]</li>
-  <li>Sketch auto-export format [none]</li>
-  <li>Compass LRUD splay angle. LRUD minimum splay-leg angle.</li>
-  <li>Up/Down minimum splay clino. [0&deg;]</li>
-  <li>Left/Right maximum splay clino. [90&deg;]</li>
-  <li>Point spacing: distance between line points</li>
+  <li>Tipo de exportación de datos predeterminado {cave,cav,csv,csx,dat,dxf,grt,gtx,srv,sur,svg,svx,th,top,tro} [ninguno]</li>
+  <li>Tipo de exportación de boceto predeterminado {ninguno,th,csx,dxf,svg,xvi} [ninguno]</li>
+  <li>Formato de exportación automática de croquis [ninguno]</li>
+  <li>Ángulo de apertura del LRUD de la brújula. Ángulo mínimo de toma abierta de LRUD.</li>
+  <li>Arriba/abajo mínimo splay clino. [0&deg;]</li>
+  <li>Clino de máxima separación izquierda/derecha. [90°]</li>
+  <li>Espaciado entre puntos: distancia entre puntos de línea</li>
   </ul>
 </li>
-<li>Import:<br>
+<li>Importar:<br>
   <ul>
-  <li><a href="page_pt_cmap.htm">PocketTopo color map</a> Map of PocketTopo colours to TopoDroid types</li>
-  <li>Estimate LR extend on import of Compass and VisualTopo files. [yes]</li>
-  <li>Import datamode: normal or diving. Diving applies only to Compass. [normal]</li>
+  <li><a href="page_pt_cmap.htm">Mapa de colores de PocketTopo</a> Mapa de los colores de PocketTopo con los tipos de TopoDroid</li>
+  <li>Calcule la extensión de LR al importar archivos de Compass y VisualTopo. [sí]</li>
+  <li>Modo de importación de datos: normal o buceo. El buceo se aplica solo a Compass. [normal]</li>
   </ul>
 </li>
 <li>Survex:<br>
   <ul>
-  <li>Survex/Topo line termination {Linux,Windows}. [Linux]</li>
-  <li>Splays TO station. [no]</li>
-  <li>LRUD. Add LRUD to Survex/Therion export. [no]</li>
+  <li>Terminación de línea Survex/Topo {Linux, Windows}. [Linux]</li>
+  <li>Muestra la estación TO. [no]</li>
+  <li>LRUD. Agregue LRUD a la exportación de Survex/Therion. [no]</li>
   </ul>
 </li>
-<li>Therion:<br>
+<li>Therión:<br>
   <ul>
-  <li>Maps first: export therion maps before survey data. [no]</li>
-  <li>Stations: Add station points to Therion scraps. [yes]</li>
-  <li>Splays: Add splay lines to Therion scraps. [yes]</li>
-  <li>LRUD. Add LRUD to Survex/Therion export. [no]</li>
-  <li>Scale. Export scale. [1:100]</li>
-  <li>xvi reference: insert reference to xvi image in th2 files</li>
+  <li>Primero los mapas: exporte los mapas de Therion antes que los datos de la topografía. [no]</li>
+  <li>Estaciones: agregue puntos de estación a los mensajes para deshacer de Therion. [sí]</li>
+  <li>tomas laterales: agregue líneas de separación a los recortes de Therion. [sí]</li>
+  <li>LRUD. Agregue LRUD a la exportación de Survex/Therion. [no]</li>
+  <li>Escala. Exportar escala. [1:100]</li>
+  <li>referencia xvi: inserte una referencia a la imagen xvi en los archivos th2</li>
   </ul>
 </li>
-<li>Compass:<br>
+<li>Brújula:<br>
   <ul>
-  <li>Compass station prefix. [no]</li>
-  <li>Compass splays: add splays to Compass files</li>
-  <li>Compass swap LR. Swap L and R on Compass export. [no]</li>
+  <li>Prefijo de la estación de la brújula. [no]</li>
+  <li>Compass tomas laterales: agregue tomas laterales a los archivos de Compass</li>
+  <li>Cambio de brújula LR. Intercambia L y R en la exportación de Compass. [no]</li>
   </ul>
 </li>
 <li>VisualTopo:<br>
   <ul>
-  <li>VisualTopo splays: add splays to VisualTopo files</li>
-  <li>LRUD at the FROM station</li>
+  <li>VisualTopo tomas laterales: agregue tomas laterales a los archivos de VisualTopo</li>
+  <li>LRUD en la estación DESDE</li>
   </ul>
 </li>
 <li>SVG:<br>
   <ul>
-  <li>Grid. Add grid to SVG export. [no]</li>
-  <li>Line orientation. [no]</li>
-  <li>Splays. Include splays. [no]</li>
-  <li>Point stroke. [0.1]</li>
-  <li>Label stroke. [0.3]</li>
-  <li>Line stroke. [0.5]</li>
-  <li>Grid stroke. [0.5]</li>
-  <li>Shot stroke. [0.5]</li>
-  <li>Orientation tick. [2.0]</li>
+  <li>Cuadrícula. Agregue cuadrícula a la exportación SVG. [no]</li>
+  <li>Orientación de línea. [no]</li>
+  <li>Pantallas. Incluir despliegues. [no]</li>
+  <li>Trazo de punto. [0.1]</li>
+  <li>Trazo de etiqueta. [0.3]</li>
+  <li>Trazo de línea. [0.5]</li>
+  <li>Trazo de cuadrícula. [0.5]</li>
+  <li>Golpe de tiro. [0.5]</li>
+  <li>Marca de orientación. [2.0]</li>
   </ul>
 </li>
 <li>DXF:<br>
   <ul>
-  <li>DXF splay endpoints. [yes]</li>
-  <li>DXF version {6,12,16}. [6]</li>
+  <li>Puntos finales de visualización DXF. [sí]</li>
+  <li>Versión DXF {6,12,16}. [6]</li>
   </ul>
 </li>
 <!-- li>PNG:<br>
   <ul>
-  <li>Image resolution [0.5, 100]. Default 1.5 [x200 px]</li>
-  <li>Background color (RGB in 0-100). [0 0 0, ie, black]</li>
-  <li>Grid: add metric grid</li>
-  <li>Splays: add splay lines</li>
-  <li>Stations: add stations</li>
+  <li>Resolución de imagen [0,5, 100]. Predeterminado 1,5 [x200 px]</li>
+  <li>Color de fondo (RGB en 0-100). [0 0 0, es decir, negro]</li>
+  <li>Cuadrícula: añadir cuadrícula métrica</li>
+  <li>tomas laterales: añade líneas de separación</li>
+  <li>Estaciones: añadir estaciones</li>
   </ul>
 </li -->
 <li>KML/GeoJSON:<br>
   <ul>
-  <li>Stations. Add stations to KML/GeoJSON export. [yes]</li>
-  <li>Splays. Add splays to KML/GeoJSON export. [no]</li>
+  <li>Estaciones. Agregue estaciones a la exportación KML/GeoJSON. [sí]</li>
+  <li>Pantallas. Agregue visualizaciones a la exportación KML/GeoJSON. [no]</li>
   </ul>
 </li>
 <li>CSV:<br>
   <ul>
-  <li>Raw data: export raw data to csv. [no]</li>
-  <li>field separator</li>
-  <li>line separator</li>
-  </ul>
+<li>Datos sin procesar: exportar datos sin procesar a csv. [no]</li>
+<li>separador de campos</li>
+<li>separador de línea</li>
+</ul>
 </li>
-<li>Custom settings:<br>
+<li>Configuración personalizada:<br>
   <ul>
-  <li>Zipped symbols in zip archives</li>
-  <li>Diving mode</li>
+  <li>Símbolos comprimidos en archivos zip</li>
+  <li>Modo de buceo</li>
   </ul>
 </li>
 </ul><br><p>
 
-<b>Survey Data</b><br>
+<b>Datos de la topografía</b><br>
 <ul>
-<li>Team. Default survey team. Default "unset"</li>
-<li>Stations Policy: Survey stations naming policy {none, splay+fore, splay+back, fore+splay, back+splay, back+splay+fore, tripod, magn.anomaly}.
-	The number of options varies with the activity level.
-	Default "splay+fore".</li>
-<li>Station names {alphanumeric,numeric}. [alphanumeric]</li>
-<li>Initial station name. Default "unset"</li>
-<li>Photo thumbnails size [80,400]. [200 pxl]</li>
-<li>Data default-export</li>
-<li>Sketch origin</li>
-<li>Shared x-sections</li>
-</ul><br>
-
-Units
-<ul>
-<li>Length units {m, ft}. [m]</li>
-<li>Angle units {deg, grad}. [deg]</li>
-<li>Sketch grid units {m, yd, 2ft, dm}. [m]</li>
-</ul><br>
-
-Shot Data
-<ul>
-<li>Leg tolerance. Tolerance among the shots of same leg &gt; 0%. [0.05, ie, 5%]</li>
-<li>Maximum shot length [50 m]</li>
-<li>Minimum shot length [30 cm]</li>
-<li>Minimum number of shots per leg. [3]</li>
-<li>Backshot DistoX. [no]</li>
-<li>Shot vertical threshold. Region around 90&deg;, where shots are extended "vertical" [0,90]. [10&deg;]</li>
-<li>Leg WENS threshold. Leg V threshold [0,90]. [80&deg;]</li>
-<li>"extend" reference. Settable or fixed extend L/R reference. [no]</li>
-<li>Prev/Next buttons. [yes]</li>
-<li>Backsight in user entered shot dialog. [no]</li>
-<li>Shot direction delay (timer). [10 s]</li>
-<li>Custom settings:<br>
-  <ul>
-  <li>Diving mode</li>
-  <li>Recent data highlight</li>
-  <li>Recent data timeout</li>
-  <li>Splay classes</li>
-  <li>Splay coloring</li>
-  <li>Fractional "extend"</li>
-  <li>Plane interpolation</li>
-  <li>Leg-shot bell</li>
-  <li>Sensors</li>
-  <li>Loop closure. Default "none"</li>
-  <li>Android compass/clino</li>
-  <li>Shot direction timer countdown. [10 s]</li>
-  <li>Shot direction timer beep volume [10,100]. [50%]</li>
-  </ul>
-</li>
-</ul><br>
-
-Location
-<ul>
-<li>Location units {ddmmss, dec.deg}. [ddmmss]</li>
-<li>CRS. Name of CRS, as used in Proj4. [Long-Lat, ie, geographic WGS84]</li>
-</ul><br>
-
-Accuracy
-<ul>
-<li>Acceleration tolerance &gt; 0. [1%]</li>
-<li>Magnetic field tolerance &gt; 0. [1%]</li>
-<li>Magnetic Dip tolerance &gt; 0. [2.0&deg;]</li>
-</ul>
-<br><p>
-
-<b>Sketching</b><br>
-<ul>
-<!-- li>Drawing tool picker {recent,list,grid,triple grid}. [most-recent]</li -->
-<li>Recent tool number {3, 4, 5, 6}. [4]</li>
-<li>Corner drag. Enable corner-drag in <u>sketch window</u> and <u>overview window</u>. [no]</li>
-<li>Zoom controls {off,temporary,permanent}. [off]</li>
-<li>x-section horizontal threshold</li>
-<li>Midline check. Check if stations are attached to midline. [yes]</li>
-<li>Leg "extend" check. [yes]</li>
-<li>Sketch default-export format</li>
-</ul><br>
-
-<div style="font-size:90%">
-<ul>
-<li>Custom settings:<br>
-  <ul>
-  <li>Sketch shift/scale</li>
-  <li>Sketch split/merge</li>
-  <li>Splay plan-view threshold. [80&deg;]</li>
-  <li>Splay dash-mode: none, by azimuth, by clino, by the view. [none]</li>
-  <li>Splay dash clino threshold. [50&deg;]</li>
-  <li>Splay dash azimuth threshold. [60&deg;]</li>
-  <li>Splay dash angle threshold. [60&deg;]</li>
-  <li>Backup number. [5]</li>
-  <li>Backup interval. [60 s]</li>
-  <li>Auto x-sections in exports</li>
-  <li>Saved station coloring</li>
-  <li>Layers. [no]</li>
-  <li>Auto-walls:<br>
-    <ul>
-    <li>Wall type. [none]</li>
-    <li>Plan splay clino</li>
-    <li>Profile splay clino</li>
-    <li>Minimum separation along the shot</li>
-    <li>Concavity</li>
-    <li>Point separation on the wall</li>
-    </ul>
-  </li>
-  </ul>
-</li>
-</ul>
-</div><br>
-
-Point Tools
-<ul>
-<li>Non-zoomed point icons. [no]</li>
-<li>Point tools scale. [1.2]</li>
-<li>Labels size. [24 pxl]</li>
-</ul><br>
-
-Line Tools
-<ul>
-<li>Lines width (N.B. wall line are twice this). [1 pxl]</li>
-<li>Line style scale factor</li>
-<li>Line style {Bezier,fine,normal,coarse, simplified}. [normal]</li>
-<li>Line-point spacing. Minimum distance between line points. [10 pxl]</li>
-<li>Section lines "direction tick" size [1,20]. Default 8 [x unit]</li>
-<li>Section points. Add Therion section point to section line. [yes]</li>
-<li>Line default join {none, start, end, both, continue}. [none]</li>
-<li>Area border default visibility. [yes]</li>
-</ul><br>
-
-<div style="font-size:90%">
-<ul>
-<li>Custom settins:<br>
-  <ul>
-  <li>Straightening angle</li>
-  <li>Interpolation accuracy (Bezier)</li>
-  <li>Cornet threshold (Bezier)</li>
-  <li>Max point/segment distance for simplification. [0.5 m]</li>
-  <li>Max segment length for simplification. [2.0 m]</li>
-  <li>Point weeding segment buffer</li>
-  <li>Line/area snap. [no]</li>
-  <li>Smooth/straighten segments</li>
-  <li>Streighten lines</li>
-  <li>Path multiselection</li>
-  </ul>
-</li>
-</ul>
-</div><br>
-
-Sketch Items
-<ul>
-<li>Survey line width [0.5,10]. [1 pxl]</li>
-<li>Station name size. [24 pxl]</li>
-<li>Green dots radius [0.5,100]. [5 pxl]</li>
-<li>Selection radius. [24 pxl]</li>
-<li>Eraser size. [36 pxl]</li>
-<li>Shift sensitivity. [60 pxl]</li>
-<li>Pointing radius. [16 pxl]</li>
-<li>Splay transparency. [80% opacity]</li>
-</ul>
-<br><p>
-
-<b>Device</b><br>
-<ul>
-<li>Bluetooth. Check if BT is enabled on start. [yes]</li>
-<!-- li>Connection data mode {on-demand, continuous, multi}. [on-demand]</li -->
-<!-- li>Auto reconnect (in continuous mode). [no]</li -->
-<li>New data number: get the number of new data before batch download</li>
-<li>BT socket type {normal,insecure}. [device dependent default]</li>
-<li>Z6 workaround. [yes]</li>
-<!-- li>Autopairing. [yes]</li -->
-</ul>
-
-<div style="font-size:90%">
-<ul>
-<li>Custom settins:<br>
-  <ul>
-  <li>Connection delay</li>
-  <li>Data pause</li>
-  <li>Data ready wait delay</li>
-  <li>Laser pause</li>
-  <li>Shot pause</li>
-  </ul>
-</li>
-</ul>
-</div><br><p>
-
-<b>DistoX Calibration</b><br>
-<ul>
-<li>Default group policy {TopoDroid, PocketTopo). [TopoDroid]</li>
-<li>Group tolerance. [40&deg;]</li>
-<li>Calibration algorithm error. [0.000001]</li>
-<li>Calibration maximum iterations. [200]</li>
-<li>Download remote calibration data immediately</li>
-<li>Show calibration raw data. [no]</li>
-<li>Default calibration algorithm {auto,linear,non-linear}. [auto]</li>
+<li>Equipo. Equipo de topografía predeterminado. "Desactivado" predeterminado</li>
+<li>Política de estaciones: Política de nomenclatura de las estaciones de estudio {ninguna, abierta+adelante, abierta+atrás, delantera+abrazada, atrás+apartada,atrás+apartada+adelante, trípode, magn.anomalía}. El número de opciones varía según el nivel de actividad. Predeterminado "splay+fore".</li>
+<li>Nombres de las estaciones {alfanumérico,numérico}. [alfanumérico]</li>
+<li>Nombre de la estación inicial. "Desactivado" predeterminado</li>
+<li>Tamaño de las miniaturas de las fotos [80 400]. [200 píxeles]</li>
+<li>Exportación predeterminada de datos</li>
+<li>Origen del croquis</li>
+<li>Secciones X compartidas
 </ul>
 <br><p>
 
