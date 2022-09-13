@@ -1,62 +1,57 @@
 <html><body>
 
-<h4>SHOT EDIT (2)</h4>
+<h4>EDICIÓN DE TOMA (2)</h4>
 
-This dialog is opened from the <i>More</i> button of the first shot edit dialog.<br><p>
+Este cuadro de diálogo se abre desde el botón <i>Más</i> del cuadro de diálogo de edición del primer disparo.<br><p>
 
-It shows the shot stations and data (length, azimuth, inclination).<br><p>
+Muestra las estaciones de toma y los datos (longitud, azimut, inclinación).<br><p>
 
-At an activity level "Basic" or "Normal" this dialog has only a button to <i>delete</i> the shot.<br><p>
+En un nivel de actividad "Básico" o "Normal", este cuadro de diálogo solo tiene un botón para <i>eliminar</i> la toma.<br><p>
 
-At higher activity levels it has six or seven buttons:<p>
+En niveles de actividad más altos tiene seis o siete botones:<p>
 
 <ul>
-<li><img src="btn_photo.png" > <a href="page_photo_dialog.htm">photo</a></li>
-<li><img src="btn_audio.png" > <a href="page_audio.htm">audio</a> comment</li>
-<li><img src="btn_sensor.png" > <a href="page_sensors.htm">Sensor measurements</a></li>
-<li><img src="btn_shot.png" > add a shot before this (manually entering the data)</li>
-<li><img src="btn_split.png" > split the survey at this shot (creating a new survey or append to another survey)</li>
-<li><img src="btn_delete.png" > delete the shot</li>
-<li><img src="btn_calib_check.png" > mark the shot as calibration-check</li>
+<li><img src="btn_photo.png" > <a href="page_photo_dialog.htm">foto</a></li>
+<li><img src="btn_audio.png" > <a href="page_audio.htm">audio</a> comentario</li>
+<li><img src="btn_sensor.png" > <a href="page_sensors.htm">Medidas del sensor</a></li>
+<li><img src="btn_shot.png" > agrega una toma antes de esta (ingresando manualmente los datos)</li>
+<li><img src="btn_split.png" > dividir la topografía en esta toma (crear una nueva topografía o agregar a otra topografía)</li>
+<li><img src="btn_delete.png" > eliminar la toma</li>
+<li><img src="btn_calib_check.png" > marcar el disparo como verificación de calibración</li>
 </ul>
 <br><p>
 
-The <b>delete</b> button does not remove the shot from the database.
-The shot gets marked as "deleted" and can be later recovered with the 
-<a href="./page_undelete.htm">Recovery</a> dialog.
-If the shot is the first shot of a leg you can also delete all the shots of the leg, by
-checking the checkbox besides the buttons.
+El botón <b>eliminar</b> no elimina la toma de la base de datos.
+El disparo se marca como "eliminado" y se puede recuperar más tarde con el Cuadro de diálogo <a href="./page_undelete.htm">Recuperación</a>.
+Si el toma es el primer toma de un tramo también puede borrar todos los tomas del tramo, haciendo clic en
+marcando la casilla de verificación además de los botones.
 <br><p>
 
-Leg shots have also a <b>calibration</b> button. This button marks the shot as "calibration-check".
-These shots are not used in the survey, and their data should be taken at different roll angles.
-They are recorded in the database, and are a record of the reliability of the device calibration
-when the survey was done. They can be displayed with the 
-<a href="./page_undelete.htm">Recovery</a> dialog.
+Los disparos a la visual también tienen un botón de <b>calibración</b>. Este botón marca el disparo como "verificación de calibración".
+Estos disparos no se utilizan en el levantamiento y sus datos deben tomarse en diferentes ángulos de balanceo.
+Se registran en la base de datos y son un registro de la confiabilidad de la calibración del dispositivo.
+cuando se hizo la topografía. Se pueden mostrar con el Cuadro de diálogo <a href="./page_undelete.htm">Recuperación</a>.
 <br><p>
 
-<b>Survey split</b><br>
-This button opens a dialog for the new survey info.
-Next the survey data are assigned to the new survey, beginning with this shot.
-Afterwards the program continues with the new survey.
-You may need to split surveys when you have data from two (separate) survey pieces stored in the device:
-these are downloaded to a single survey which must be then split accordingly.<br>
+<b>División de la topografía</b><br>
+Este botón abre un cuadro de diálogo para la nueva información de la topografía.
+A continuación, los datos de la topografía se asignan a la nueva topografía, comenzando con esta toma.
+Posteriormente el programa continúa con la nueva topografía.
+Es posible que deba dividir las topografías cuando tenga datos de dos topografías (separadas) almacenadas en el dispositivo:
+estos se descargan en una sola topografía que luego se debe dividir en consecuencia.<br>
 
-At tester level you get also the option to <b>move</b> the data to another survey.
-Select the target survey from the pull-down option set, and tap the "Move" button.
+A nivel de probador, también tiene la opción de <b>mover</b> los datos a otra topografía.
+Seleccione la topografía de destino del conjunto de opciones desplegables y toque el botón "Mover".
 <br><p>
 
-<b>Warning</b>. It is advisable to make a zip archive before splitting/moving the 
-survey and back it up to a safe place.<br><p> 
+<b>Advertencia</b>. Es recomendable hacer un archivo zip antes de dividir/mover la topografía y haz una copia de seguridad en un lugar seguro.<br><p>
 
-<b>At-station LRUD</b><br>
-LRUD shots, at either the FROM or the TO station, are added by filling the four LRUD edit boxes
-and tapping the <i>Add LRUD</i> button. <br>
-It is also possible to add "intermediate" LRUD entering the distance (in the current units) along the shot,
-between the LRUD point and the FROM station.<br>
-For splay shots there is only the FROM station.<br>
-"Intermediate" LRUD are appended to the data list, the others are added before the shot.<br>
-The manual LRUD are marked as "x-splays".<br>
+<b>LRUD en la estación</b><br>
+Las tomas LRUD, ya sea en la estación DESDE o A, se agregan llenando los cuatro cuadros de edición LRUD y tocando el botón <i>Agregar LRUD</i>. <br>
+También es posible añadir LRUD "intermedio" introduciendo la distancia (en las unidades actuales) a lo largo del plano, entre el punto LRUD y la estación FROM.<br>
+Para tomas separadas, solo existe la estación DESDE.<br>
+Los LRUD "intermedios" se agregan a la lista de datos, los demás se agregan antes del disparo.<br>
+Los LRUD manuales están marcados como "x-splays".<br>
 <br><p> 
 
 </body></html>
