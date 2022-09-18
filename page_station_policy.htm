@@ -1,76 +1,71 @@
 <html><body>
 
-<h4>STATION NAMING POLICIES</h4>
+<h4>POLÍTICAS DE NOMBRE DE ESTACIONES</h4>
 
-When you download data TopoDroid can automatically assign them station names. A repeated measurement is considered a leg shot, the others are splay shots.  If you stick to a convention taking measurements TopoDroid automatic station naming can be very handy. TopoDroid supports a number of conventions to automatically assign stations to shots. You can select the one that fits your habits through the settings.
+Cuando descargas datos, TopoDroid puede asignarles automáticamente nombres de estaciones. Una medición repetida se considera una toma de visual, las demás son tomas de splay. Si se apega a una convención de tomar medidas, la asignación automática de nombres de estaciones TopoDroid puede ser muy útil. TopoDroid admite una serie de convenciones para asignar automáticamente estaciones a tomas. Puede seleccionar el que se ajuste a sus hábitos a través de la configuración.
 <ol>
-<li><b>splays+foreshot</b>. At the FROM station: you take splays first and then forward leg shots. This is the default convention.</li>
-<li><b>splays+backshot</b>. At the TO station: you take splays first and then backward leg shots</li>
-<li><b>backsight</b></li>
-<li><b>tripod</b> [A]</li>
-<li><b>magnetic anomaly</b> compensation [E]</li>
-<li><b>foreshot+splays</b>. At the FROM station: you take the forward leg shots first, and then the splays</li>
-<li><b>backshot+splays</b>. At the TO station: you take backward leg shots first and then splays</li>
+<li><b>radiales en origen + visual directa</b>. En la estación DESDE: primero tomas laterales y luego tomas con la visual adelantada. Esta es la configuración predeterminada.</li>
+<li><b>radiales en destino + visual inversa</b>. En la estación TO: primero haces toma  laterales y luego tomas con las visuales hacia atrás</li>
+<li><b>directa + inversa con verificación</b></li>
+<li><b>Teodolito o trípode</b> [A]</li>
+Compensación de <li><b>anomalía magnética</b> [E]</li>
+<li><b>visual directa+radiales en origen</b>. En la estación DESDE: primero realiza los tomas con la visual adelantada y luego las tomas laterales</li>
+<li><b>visual inversa+radiales en destino</b>. En la estación TO: primero realiza tomas con la visual hacia atrás y luego se abre</li>
 <li><b>TopoRobot</b> [T]</li>
 </ol><br><p>
 
-Examples of the conventions (shots taken at the same station are grouped in parenthesis):
+Ejemplos de las configuraciones (las tomas tomadas en la misma estación se agrupan entre paréntesis):
 <ol>
 <li> ... (1-. 1-. 1-. 1-2) (2-. 2-. 2-3) ... </li>
 <li> ... (2-. 2-. 2-. 2-1) (3-. 3-. 3-2) ... </li>
 <li> ... (2-1 2-. 2-. 2-3) (3-2 3-. 3-. 3-4) ... </li>
 <li> ... (2-1 2-. 2-. 2-3) (4-3 4-. 4-. 4-5) ... </li>
-<li> ... (2-1 2-. 2-. 2-3) (3-2 3-. 3-. 3-4) ... (same as "3")</li>
+<li> ... (2-1 2-. 2-. 2-3) (3-2 3-. 3-. 3-4) ... (igual que "3")</li>
 <li> ... (1-2 1-. 1-. 1-.) (2-3 2-. 2-.) ... </li>
 <li> ... (2-1 2-. 2-. 2-.) (3-2 3-. 3-.) ... </li>
-<li> ... (1-. 1-. 1-. 1-2) (2-. 2-. 2-3) ... (same as "1")</li>
+<li> ... (1-. 1-. 1-. 1-2) (2-. 2-. 2-3) ... (igual que "1")</li>
 </ol><br>
 
-Sequence a-b-c-d for the first (foreshot) and the second (backshot) policies.<br>
+Secuencia a-b-c-d para las políticas primera (vista anterior) y segunda (vista posterior).<br>
 <img src="survey_policy.png">
 <br><p>
 
-Each time the automatic station assignment is carried out, it starts from the last leg
-(or second to last for the <i>backsight</i> and <i>tripod</i> policies).
-If the survey has yet no leg, it starts from the first shot. 
-Therefore shots before the last leg are not modified, while stations are 
-assigned to all the shots following the last leg.
-This may affect the station of splays immediately following the last leg, when the station-assignment
-policy is changed.<br><p>
+Cada vez que se realiza la asignación automática de estaciones, se parte del último tramo (o penúltimo para las políticas <i>backsight</i> y <i>tripod</i>).
+Si la topografía aún no tiene visual, comienza desde el primer toma.
+Por lo tanto, los tomas antes del último tramo no se modifican, mientras que las estaciones se asignado a todos los tomas posteriores al último tramo.
+Esto puede afectar la estación de toma  laterales inmediatamente después del último tramo, cuando la asignación de estación se cambia la política.<br><p>
 
-<b>Backsight</b> policy<br>
-At each station you take the backshot to the previous station, next the splay shots, and finally the forward shot to the next station.<br>
-Backsight shots are checked: if a shot is not close to the opposite of the previous leg, it is not considered a backsight shot.<br>
-The backsight shots are marked "duplicate".<br><p>
+<b>Política de referencia</b><br>
+En cada estación, toma la toma trasera a la estación anterior, luego las tomas separadas y, finalmente, la toma frontal a la siguiente estación.<br>
+Los tomas a vista atrás se comprueban: si un toma no está cerca del lado opuesto del tramo anterior, no se considera un toma a vista atrás.<br>
+Las tomas de referencia están marcadas como "duplicadas".<br><p>
 
-<b>Tripod</b> policy<br>
-At station "1" you take splays and then shots to the station "2". Then you move into station "3", take shots to station "2", then splays, then shots
-to station "4". Move to station "5" and so on.<br><p>
+<b>Política de trípode</b><br>
+En la estación "1" tomas  laterales y luego disparas a la estación "2". Luego te mueves a la estación "3", tomas fotos a la estación "2", luego haces toma  laterales, luego tomas
+a la estación "4". Mover a la estación "5" y así sucesivamente.<br><p>
 
-<b>Magnetic anomaly compensation</b> [Tester level]<br>
-The magnetic anomaly compensation is done estimating at each station the
-"local" magnetic declination by comparing the azimuths of the leg reaching to the station and the backsight leg. The azimuth of all the shots at the station are then corrected with the "local" declination. An overall declination remains because the declination at the first station cannot be determined. Furthermore the survey azimuth angles become relative as in a traverse, therefore the angle errors add up instead of compensating.<br>
-The magnetic anomaly compensation requires taking basksight shots. However, with magnetic anomaly compensation the check whether a shot is a backsight does not take the azimuth into account. The magnetic anomaly compensation is carried out during the data reduction (for the sketches).<br><p>
+<b>Compensación de anomalías magnéticas</b> [Nivel de probador]<br>
+La compensación de anomalías magnéticas se realiza estimando en cada estación la declinación magnética "local" comparando los rumbo es del tramo que llega a la estación y el tramo de referencia. El rumbo de todos los tomas en la estación se corrige luego con la declinación "local". Queda una declinación general porque no se puede determinar la declinación en la primera estación. Además, los ángulos de rumbo del levantamiento se vuelven relativos como en una poligonal, por lo que los errores de ángulo se suman en lugar de compensarse.<br>
+La compensación de anomalías magnéticas requiere realizar tomas a la vista. Sin embargo, con la compensación de anomalías magnéticas, la verificación de si un toma es una vista trasera no tiene en cuenta el rumbo. La compensación de anomalías magnéticas se realiza durante la reducción de datos (para los croquis).<br><p>
 
-<b>TopoRobot</b> policy<br>
-The "TopoRobot" policy is just like the first, but station names follow the TopoRobot convention.<br><p>
+<b>Política de TopoRobot</b><br>
+La política de "TopoRobot" es como la primera, pero los nombres de las estaciones siguen la convención de TopoRobot.<br><p>
 
-<b>Station naming policy and activity levels</b><br>
-Certain station naming policy are disabled at high activity levels:
+<b>Política de nombres de estaciones y niveles de actividad</b><br>
+Ciertas políticas de nombres de estaciones están deshabilitadas en niveles altos de actividad:
 <ul>
-<li>"Tripod" requires "advanced" level</li>
-<li>"Magnetic anomaly" requires "expert" level</li>
-<li>"TopoRobot" requires "tester" level</li>
+<li>"Trípode" requiere nivel "avanzado"</li>
+<li>"Anomalía magnética" requiere un nivel de "experto"</li>
+<li>"TopoRobot" requiere nivel de "probador"</li>
 </ul><br>
-Reducing the activity level when one of these is active, automatically set the station policy to the default policy (splays + foreshot).
-The policy is automatically reinstated again if the activity level is raised to the required value or above.<br><p>
+Reduciendo el nivel de actividad cuando uno de estos está activo, establece automáticamente la política de la estación a la política predeterminada (toma  laterales + foreshot).
+La política se restablece automáticamente de nuevo si el nivel de actividad se eleva al valor requerido o superior.<br><p>
 
-<b>Blunder leg-shot</b> [T]<br>
-A <i>blunder shot</i> is an intermediate leg shot that happened to be off-target.
-Typical leg sequences with blunders 'B' are "A-B-A-A" and "A-A-B-A".<br>
-Blunder leg-shot detection is an experimental feature of the <i>default station naming policy</i>.
-It must be enabled with a custom setting.<br>
-Blunder shots are detected and marked as blank entry that will be hidden when the list is refreshed.<br>
-Blunder shots can be recovered.<br><p>
+<b>toma en la visual</b> [T]<br>
+Un <i>toma por error</i> es un toma intermedio con la visual que salió desviado. Las secuencias típicas de visuales con errores 'B' son "A-B-A-A" y "A-A-B-A".<br>
+La detección de tomas erróneos en las visuales es una característica experimental de la <i>política de nomenclatura de estaciones predeterminada</i>.
+Debe habilitarse con una configuración personalizada.<br>
+Los tomas erróneos se detectan y se marcan como una entrada en blanco que se ocultará cuando se actualice la lista.<br>
+Los tomas erróneos se pueden recuperar.<br><p>
 
 </body></html>
