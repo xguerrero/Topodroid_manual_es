@@ -1,37 +1,49 @@
 <html><body>
+<h4>ESTADÍSTICAS DE DIBUJOS</h4>
 
-<h4>SKETCH STATISTICS</h4>
-
-This dialog is opened from the <i>Statistics</i> menu of the <u>sketch window</u> (plan or profile view).
-It displays both data statistics and sketch data statistics.<br><p>
+Este diálogo se abre desde el menú <i>Estadísticas</i> de la <u>ventana de croquis</u> (vista de planta o perfil).
+Muestra estadísticas de datos y estadísticas de datos de croquis.<br><p>
 
 
-The survey statistics are
+Las estadísticas de la topografía son
 <ul>
-<li>number of (regular) legs, sketch legs, their total, profile, and plan lengths</li>
-<li>number of duplicate legs, sketch duplicate legs, and their total length</li>
-<li>number of surface leg, sketch surface legs, and their total length</li>
-<li>number of splay shots, and sketch splay shots</li>
-<li>number of stations, and sketch stations</li>
-<li>number of shots not attached to the sketch if any, and their total length. Tapping this line opens the dialog
-with the list of unattached shots.</li>
-<li>number of cycles (including the backshot-cycles) if any.</li>
-<li>number of disconnected survey componentss if greater than 1.
-(This is 1 if the legs are all attached together in one survey)</li>
+<li>número de tomas (normales), tomas de croquis, su longitud total, perfil y plano</li>
+<li>número de tomas duplicadas, croquis de tomas duplicadas y su longitud total</li>
+<li>número de tomas de superficie, tomas de superficie de croquis y su longitud total</li>
+<li>número de tomas separadas y tomas separadas de croquis</li>
+<li>número de estaciones y dibujos de estaciones</li>
+<li>número de tomas no adjuntas al dibujo, si las hay, y su duración total. Al tocar esta línea se abre el cuadro de diálogo con la lista de tomas no adjuntas.</li>
+<li>número de ciclos (incluidos los ciclos de retroceso), si los hay.</li>
+<li>número de componentes de la topografía desconectados si es mayor que 1. (Este es 1 si las tomas están todas unidas en una topografía)</li>
 </ul>
 
-Other sketch related statistics are
+Otras estadísticas relacionadas con dibujos son
 <ul>
-<li>origin station (zero station)</li>
-<li>the midline length</li>
-<li>profile-view (3D) midline length</li>
-<li>plan-view midline length</li>
-<li>the sketch extension (West, East, North and South)</li>
-<li>the sketch depths, both positive (above the zero station) and negative (below the zero station)</li>
-<li>average angle error between shots of the same leg [degrees]</li>
-<li>the number of loops</li>
+<li>estación de origen (estación cero)</li>
+<li>la longitud de la línea media</li>
+<li>longitud de la línea media de la vista de perfil (3D)</li>
+<li>longitud de la línea media vista en planta</li>
+<li>la extensión del croquis (Oeste, Este, Norte y Sur)</li>
+<li>las profundidades del dibujo, tanto positivas (por encima de la estación cero) como negativas (por debajo de la estación cero)</li>
+<li>error de ángulo medio entre tiros de la misma pierna [grados]</li>
+<li>el número de bucles</li>
 </ul>
 <br><p>
+
+Para cada bucle:
+<ul>
+<li>toma de cierre</li>
+<li>número de tomas en bucle</li>
+<li>error de cierre: longitud 3d sobre la longitud total del bucle</li>
+<li>longitudes de error horizontal y vertical</li>
+<li>porcentaje de error: relación entre el error y la longitud del bucle</li>
+<li>error de ángulo de tiro estimado [grados]. Este es el error multiplicado por la raíz cuadrada del número de tomas y dividido por la duración. El resultado, en radianes, se convierte a grados. </li>
+</ul>
+<br><p>
+
+La longitud está en las unidades establecidas en la configuración de la aplicación.<br><p>
+
+Al tocar la entrada de cierre de bucle, se alterna entre el error de cierre y la lista de estaciones de bucle.<br><p>
 
 For each loop:
 <ul>
