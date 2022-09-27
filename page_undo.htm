@@ -1,15 +1,15 @@
 <html><body>
 
-<h4>THE UNDO STACK</h4>
+<h4>LA LISTA DE DESHACER</h4>
 
-TopoDroid implements undo/redo with a stack of draw/erase/edit actions. When you draw something a draw action is put at the top of the stack. Undoing amounts to moving the stack pointer down the stack (beside affecting the sketch drawing). Redoing moves the stack pointer up (and add the drawing to the sketch).<br><p>
+TopoDroid implementa deshacer/rehacer con una lista de acciones dibujar/borrar/editar. Cuando añades algo, se coloca en la parte superior de la lista. Deshacer equivale a mover el puntero de la lista hacia abajo en la lista (además de afectar el dibujo del croquis). Rehacer mueve el puntero de la lista hacia arriba (y agrega el dibujo al croquis).<br><p>
 
-The effect of the "continuation" drawing on the undo stack is that a new line is not created, and the line that has been continued is moved on top of the undo stack.<br><p>
+El efecto del dibujo de "continuación" en la lista de deshacer es que no se crea una nueva línea y la línea que ha continuado se mueve encima de la lista de deshacer.<br><p>
 
-Erase and edit actions can also be undone/redone. However their effect on the stack is not as straightforward as for drawing.<br><p>
+Las acciones de borrar y editar también se pueden deshacer/rehacer. Sin embargo, su efecto en la lista no es tan sencillo como para dibujar.<br><p>
 
-Erasing is a raster operation while the drawing is made of vector items. The points of the vector items that come under the erased region are removed. This affects the undo stack in two way. Is an item is completely erased (eg, a point item), it is dropped from the stack. Undoing the erase action puts the item back, but at the top of the stack. Erasing the middle of a line remove the line object from the stack and replaces it with two lines that are added on the top of the stack.<br><p>
-For example, erasing can change the position of a line in the undo stack. Erasing the middle of a line drops the line from the stack and puts the two end pieces at the top of the stack. A following "undo" removes the two pieces and puts the line back, however at the top of the stack.<br><p>
+El borrado es una operación de trama mientras que el dibujo está hecho de elementos vectoriales. Se eliminan los puntos de los elementos vectoriales que se encuentran debajo de la región borrada. Esto afecta la lista de deshacer de dos maneras. Si un elemento se borra por completo (por ejemplo, un elemento de punto), se elimina de la lista. Al deshacer la acción de borrar, se vuelve a colocar el elemento, pero en la parte superior de la lista. Al borrar la mitad de una línea, elimina el objeto de línea de la lista y lo reemplaza con dos líneas que se agregan en la parte superior de la lista.<br><p>
+Por ejemplo, borrar puede cambiar la posición de una línea en la lista de deshacer. Al borrar la mitad de una línea, se suelta la línea de la lista y se colocan las dos piezas finales en la parte superior de la lista. Un "deshacer" posterior elimina las dos piezas y vuelve a colocar la línea, sin embargo, en la parte superior de la lista.<br><p>
 
 
 
