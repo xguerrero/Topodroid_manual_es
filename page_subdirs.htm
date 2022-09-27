@@ -1,36 +1,36 @@
 <html><body>
 
-<h4>TopoDroid SUBDIRECTORIES</h4>
+<h4>Subdirectorios TopoDroid</h4>
 
-Here is some background about how the survey data, the calibration data, and the sketches are stored.<br><p>
+Aquí hay algunos antecedentes sobre cómo se almacenan los datos topográficos, los datos de calibración y los dibujos.<br><p>
 
-The app creates its default base directory in the primary public external memory, "Documents/TDX".
-This directory is not removed when you uninstall the app. 
-In this directory the app creates the surveys folder "TopoDroid" with the SQLite database "distox14.sqlite" that storesthe survey data, 
-the surveys sketch files, and other surveys files.<br><p>
+La aplicación crea su directorio base predeterminado en la memoria externa pública principal, "Documentos/TDX".
+Este directorio no se elimina cuando desinstala la aplicación.
+En este directorio la aplicación crea la carpeta de topografías "TopoDroid" con la base de datos SQLite "distox14.sqlite" que almacena los datos de la topografía,
+los archivos de croquis de topografías y otros archivos de topografías.<br><p>
 
-The app also creates subdirectories for the different types of files.<br>
-The following subdirectories are created only in the app private directory, that is
-"Android/data/com.topodroid.TDX/files" in the primary external memory.
-<ul style="margin-top: 0">
-<li><b>bin</b>: firmware files (DistoX2 only)</li>
-<li><b>ccsv</b>: CSV text files of exported calibrations (DistoX only)</li>
-<li><b>dump</b>: memory dump files (DistoX only)</li>
-<li><b>symbol</b>: drawing tools files (points, lines, areas)</li>
-<li>man: user manual translation</li>
+La aplicación también crea subdirectorios para los diferentes tipos de archivos.<br>
+Los siguientes subdirectorios se crean solo en el directorio privado de la aplicación, es decir
+"Android/data/com.topodroid.TDX/files" en la memoria externa principal.
+<ul style="margen superior: 0">
+<li><b>bin</b>: archivos de firmware (solo DistoX2)</li>
+<li><b>ccsv</b>: archivos de texto CSV de calibraciones exportadas (solo DistoX)</li>
+<li><b>dump</b>: archivos de volcado de memoria (solo DistoX)</li>
+<li><b>símbolo</b>: archivos de herramientas de dibujo (puntos, líneas, áreas)</li>
+<li>man: traducción del manual del usuario</li>
 </ul>
-"bin" is used to store firmware files, both the factory files included in TopoDroid and the firmware dumps read from a DistoX2.<br>
-The database "device10.sqlite", with the calibration data, and the devices informations is in this directory.<br><p>
+"bin" se usa para almacenar archivos de firmware, tanto los archivos de fábrica incluidos en TopoDroid como los volcados de firmware leídos desde un DistoX2.<br>
+La base de datos "device10.sqlite", con los datos de calibración y la información de los dispositivos se encuentra en este directorio.<br><p>
 
-<!-- A <b>zip</b> folder is created in the project folder "TDX/TopoDroid". -->
-For each survey a survey-folder (named after the survey name) is created, with
-the following folders:
-<ul style="margin-top: 0">
-<li><b>audio</b>: <i>audio</i> comments (wav files)</li>
-<li><b>note</b>: survey annotations text file</li>
-<li><b>photo</b>: survey pictures (jpg files)</li>
-<li><b>tdr</b>: binary sketch files</li>
-<li><b>out</b>: exported files</li>
+<!-- Se crea una carpeta <b>zip</b> en la carpeta del proyecto "TDX/TopoDroid". -->
+Para cada topografía se crea una carpeta de topografías (nombrada según el nombre de la topografía), con
+las siguientes carpetas:
+<ul style="margen superior: 0">
+<li><b>audio</b>: <i>audio</i> comentarios (archivos wav)</li>
+<li><b>nota</b>: archivo de texto de anotaciones de la topografía</li>
+<li><b>foto</b>: imágenes de la topografía (archivos jpg)</li>
+<li><b>tdr</b>: archivos de dibujo binarios</li>
+<li><b>fuera</b>: archivos exportados</li>
 </ul>
 
 </body></html>
